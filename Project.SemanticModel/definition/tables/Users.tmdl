@@ -1,0 +1,94 @@
+table Users
+	lineageTag: 7054c9f9-51f1-4813-98ad-3d1c62156354
+
+	column UserID
+		dataType: string
+		isHidden
+		lineageTag: 99d5603a-acfb-4e1e-8255-e19d9ba86fa2
+		summarizeBy: none
+		sourceColumn: UserID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeeCode
+		dataType: string
+		isHidden
+		lineageTag: bd0ec2e8-77da-43eb-86e3-3a6d4c6b9a23
+		summarizeBy: none
+		sourceColumn: EmployeeCode
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserName
+		dataType: string
+		lineageTag: bb81e56c-05f1-4655-adcf-6a3849d1c307
+		summarizeBy: none
+		sourceColumn: UserName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Department
+		dataType: string
+		lineageTag: b156d9ed-83c5-487f-a364-02432935d054
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = Automatic
+
+	column Role
+		dataType: string
+		lineageTag: b2cad937-fdc9-4657-a372-17da7552071c
+		summarizeBy: none
+		sourceColumn: Role
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: abb21206-dfe0-4946-a8a0-f2205cfffc4c
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy Organization
+		lineageTag: bc2b5e1b-5742-46a8-b986-be4f4e08e322
+
+		level Location
+			lineageTag: 49260908-f267-43d7-a77d-b0dbcef40d7a
+			column: Location
+
+		level Department
+			lineageTag: 872a9b82-82aa-4bdb-bb1c-a0b4d1ea5014
+			column: Department
+
+		level Role
+			lineageTag: 576ac138-d797-4678-865c-117f011ffcb8
+			column: Role
+
+		level UserName
+			lineageTag: f565fed8-98ec-482d-bf09-f42755d1bcac
+			column: UserName
+
+	partition Users = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Kritika.Chhabra\Downloads\PowerBI_Project\Users.csv"),[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"UserID", type text}, {"EmployeeCode", type text}, {"UserName", type text}, {"Department", type text}, {"Role", type text}, {"Location", type text}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type1",{{"Department", Text.Trim, type text}, {"Role", Text.Trim, type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Trimmed Text",{{"Role", Text.Proper, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","it","IT",Replacer.ReplaceText,{"Department"})
+				in
+				    #"Replaced Value"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

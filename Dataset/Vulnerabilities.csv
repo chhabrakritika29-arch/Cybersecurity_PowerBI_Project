@@ -1,0 +1,501 @@
+VulnerabilityID,DeviceID,CVE,VulnerabilityType,RiskScore,RiskLevel,DiscoveredDate,PatchStatus,PatchDate
+VUL00001,D0112,,Privilege Issue,6.3,Medium,2025-03-12,Patched,2025-04-03
+VUL00002,D0022,CVE-2023-17031,Outdated Software,2.2,Low,2025-07-03,Pending,
+VUL00003,D0150,CVE-2024-76047,Weak Password,2.6,Low,2026-01-17,Risk Accepted,
+VUL00004,D0087,CVE-2026-49241,Missing Patch,4.7,Medium,2026-01-18,Pending,
+VUL00005,D0066,CVE-2022-17805,Unencrypted Service,4.0,Medium,2026-03-11,Patched,2026-03-20
+VUL00006,D0068,,Missing Patch,8.2,high,2025-05-25,Pending,
+VUL00007,D0137,CVE-2021-85351,Privilege Issue,2.5,Low,2026-08-04,Patched,2026-09-15
+VUL00008,D0099,CVE-2023-20085,Outdated Software,4.5,Medium,2025-06-26,Patched,2025-08-07
+VUL00009,D0086,CVE-2022-14984,Unencrypted Service,8.7,High,2025-11-16,Pending,
+VUL00010,D0098,CVE-2022-37782,Weak Password,3.1,Low,2026-01-07,Patched,2026-01-11
+VUL00011,D0005,CVE-2023-41295,Missing Patch,2.1,Low,2025-08-13,Patched,2025-08-18
+VUL00012,D0073,CVE-2026-4642,Unsupported OS,4.0,Medium,2025-03-27,Pending,
+VUL00013,D0036,,Outdated Software,7.9,High,2025-12-10,Not Patched,
+VUL00014,D0110,CVE-2026-63001,Privilege Issue,2.4,Low,2025-05-10,Patched,2025-06-09
+VUL00015,D0090,,Unencrypted Service,5.2,Medium,2025-07-08,Pending,
+VUL00016,D0017,,Unencrypted Service,3.7,Low,2025-03-21,Patched,2025-04-19
+VUL00017,D0116,CVE-2025-54854,Outdated Software,3.3,Low,2026-01-25,Patched,2026-02-20
+VUL00018,D0114,CVE-2023-7255,Unsupported OS,2.9,Low,2025-02-11,Patched,2025-04-08
+VUL00019,D0033,,Privilege Issue,2.4,Low,2025-07-08,Patched,2025-09-03
+VUL00020,D0073,CVE-2025-96024,Misconfiguration,3.1,Low,2025-01-09,Risk Accepted,
+VUL00021,D0036,,Misconfiguration,3.7,Low,2025-08-30,pending,
+VUL00022,D0029,CVE-2024-97816,Privilege Issue,5.3,Medium,2025-08-06,Risk Accepted,
+VUL00023,D0079,CVE-2021-15680,Unsupported OS,9.3,Critical,2025-11-11,Patched,2025-12-13
+VUL00024,D0029,,Missing Patch,2.9,Low,2025-03-11,Pending,
+VUL00025,D0150,CVE-2023-68604,Exposed Port,2.5,Low,2025-09-03,Patched,2025-09-11
+VUL00026,D0047,,Unencrypted Service,5.2,Medium,2025-01-11,Patched,2025-02-06
+VUL00027,D0131,,Misconfiguration,6.3,Medium,2025-12-14,Risk Accepted,
+VUL00028,D0018,CVE-2023-4382,Outdated Software,8.5,High,2026-04-02,Pending,
+VUL00029,D0118,,Unencrypted Service,7.0,High,2026-01-01,Patched,2026-02-23
+VUL00030,D0072,,Unencrypted Service,2.4,Low,2025-11-11,Patched,2025-12-13
+VUL00031,D0071,,Exposed Port,4.5,Medium,2025-06-24,Patched,2025-08-02
+VUL00032,D0110,,Privilege Issue,9.7,Critical,2026-02-04,Patched,2026-03-11
+VUL00033,D0031,CVE-2026-65196,Privilege Issue,6.3,Medium,2025-04-30,Patched,2025-05-05
+VUL00034,D0076,CVE-2024-68879,Unencrypted Service,8.6,High,2025-08-14,Pending,
+VUL00035,D0033,,Weak Password,5.7,Medium,2026-01-19,Patched,2026-02-04
+VUL00036,D0134,,Weak Password,2.8,Low,2026-06-13,Patched,2026-07-04
+VUL00037,D0086,,Unsupported OS,4.2,Medium,2025-08-07,Not Patched,
+VUL00038,D0117,,Outdated Software,7.1,High,2026-03-25,Patched,2026-04-24
+VUL00039,D0114,,Unsupported OS,7.1,High,2026-05-03,Not Patched,
+VUL00040,D0054,CVE-2023-14674,Missing Patch,2.2,Low,2025-12-12,Patched,2026-01-13
+VUL00041,D0045,CVE-2022-76327,Unsupported OS,9.7,Critical,2026-04-28,Pending,
+VUL00042,D0115,CVE-2026-83113,Missing Patch,7.5,High,2026-01-27,Patched,2026-02-20
+VUL00043,D0027,CVE-2023-21448,Exposed Port,6.0,Medium,2025-12-01,Patched,2026-01-05
+VUL00044,D0040,CVE-2023-21244,Missing Patch,8.1,High,2025-11-12,Not Patched,
+VUL00045,D0007,CVE-2023-75820,Exposed Port,3.5,Low,2025-06-07,Patched,2025-06-12
+VUL00046,D0118,CVE-2026-15005,Unencrypted Service,3.3,Low,2025-02-12,Patched,2025-03-30
+VUL00047,D0119,CVE-2022-58556,Missing Patch,5.4,Medium,2026-06-10,Pending,
+VUL00048,D0009,,Unsupported OS,2.4,Low,2026-01-18,Patched,2026-01-29
+VUL00049,D0050,CVE-2026-46531,Outdated Software,8.3,High,2026-02-04,Patched,2026-03-23
+VUL00050,D0146,,Unsupported OS,5.1,Medium,2026-02-11,Pending,
+VUL00051,D0134,CVE-2024-33773,Unencrypted Service,4.0,Medium,2026-07-08,Pending,
+VUL00052,D0027,,Missing Patch,9.2,Critical,2025-03-15,Patched,2025-03-18
+VUL00053,D0138,,Unencrypted Service,6.6,Medium,2025-02-03,Pending,
+VUL00054,D0106,CVE-2023-16704,Privilege Issue,3.2,Low,2025-03-01,Risk Accepted,
+VUL00055,D0032,,Exposed Port,6.8,Medium,2025-11-19,Pending,
+VUL00056,D0087,,Misconfiguration,6.2,Medium,2025-01-29,Patched,2025-02-04
+VUL00057,D0046,CVE-2023-29441,Weak Password,3.4,Low,2025-10-04,Pending,
+VUL00058,D0117,CVE-2025-79309,Unsupported OS,5.7,Medium,2025-02-16,Patched,2025-03-24
+VUL00059,D0146,CVE-2025-96370,Exposed Port,3.5,Low,2026-06-03,Patched,2026-08-02
+VUL00060,D0022,,Privilege Issue,5.9,Medium,2025-02-03,Patched,2025-04-01
+VUL00061,D0116,,Outdated Software,9.6,Critical,2026-06-27,Risk Accepted,
+VUL00062,D0027,CVE-2026-77091,Missing Patch,2.5,Low,2025-05-01,Patched,2025-06-12
+VUL00063,D0136,CVE-2022-62008,Privilege Issue,3.8,Low,2025-08-01,Risk Accepted,
+VUL00064,D0012,,Exposed Port,4.2,Medium,2025-12-10,Not Patched,
+VUL00065,D0048,,Unencrypted Service,4.1,Medium,2025-09-05,Pending,
+VUL00066,D0009,,Exposed Port,4.2,Medium,2026-02-24,Patched,2026-04-25
+VUL00067,D0102,CVE-2024-77748,Misconfiguration,7.8,High,2025-04-18,Patched,2025-05-29
+VUL00068,D0147,,Exposed Port,5.8,Medium,2025-07-21,Patched,2025-09-16
+VUL00069,D0099,CVE-2024-88738,Exposed Port,6.9,Medium,2025-03-21,Not Patched,
+VUL00070,D0013,CVE-2026-86091,Unsupported OS,3.2,Low,2025-03-16,Pending,
+VUL00071,D0076,,Unencrypted Service,2.7,Low,2025-09-27,Not Patched,
+VUL00072,D0126,,Privilege Issue,5.7,Medium,2025-07-23,Patched,2025-09-01
+VUL00073,D0085,,Missing Patch,2.1,Low,2025-02-03,Patched,2025-03-25
+VUL00074,D0116,CVE-2026-36195,Unsupported OS,8.5,High,2025-09-01,Risk Accepted,
+VUL00075,D0003,,Weak Password,4.4,Medium,2026-02-11,Not Patched,
+VUL00076,D0150,CVE-2024-96951,Misconfiguration,6.7,Medium,2025-03-29,Risk Accepted,
+VUL00077,D0048,CVE-2021-11084,Privilege Issue,7.4,High,2025-06-30,Pending,
+VUL00078,D0087,CVE-2024-24402,Weak Password,2.9,Low,2026-06-05,Patched,2026-07-21
+VUL00079,D0075,CVE-2025-19616,Unsupported OS,9.6,Critical,2026-02-20,Not Patched,
+VUL00080,D0140,CVE-2024-52152,Weak Password,4.1,Medium,2025-09-10,Pending,
+VUL00081,D0104,CVE-2023-48715,Misconfiguration,5.0,Medium,2026-05-17,Pending,
+VUL00082,D0111,CVE-2026-38045,Outdated Software,2.1,Low,2026-03-23,Pending,
+VUL00083,D0052,CVE-2022-52428,Weak Password,7.9,High,2026-06-11,Not Patched,
+VUL00084,D0148,CVE-2026-68851,Outdated Software,3.5,Low,2025-12-27,Patched,2026-01-30
+VUL00085,D0006,CVE-2021-7483,Missing Patch,5.9,Medium,2026-07-10,Patched,2026-08-01
+VUL00086,D0125,,Outdated Software,10.0,Critical,2025-05-27,Patched,2025-06-09
+VUL00087,D0121,CVE-2022-30113,Privilege Issue,9.0,Critical,2025-10-15,Pending,
+VUL00088,D0068,CVE-2024-24140,Privilege Issue,3.1,Low,2025-03-31,Patched,2025-05-22
+VUL00089,D0059,,Unencrypted Service,6.6,Medium,2026-08-06,Pending,
+VUL00090,D0084,CVE-2022-81051,Misconfiguration,4.1,Medium,2026-08-08,Pending,
+VUL00091,D0102,CVE-2022-99566,Unencrypted Service,7.8, Critical ,2025-09-10,Not Patched,
+VUL00092,D0121,CVE-2025-46301,Weak Password,3.4,Low,2025-01-31,Risk Accepted,
+VUL00093,D0020,CVE-2021-79616,Outdated Software,7.3,High,2026-03-03,Patched,2026-04-24
+VUL00094,D0005,CVE-2022-36217,Unencrypted Service,7.0,High,2025-09-27,Patched,2025-11-13
+VUL00095,D0033,CVE-2024-31483,Missing Patch,3.5,Low,2025-12-04,Patched,2025-12-21
+VUL00096,D0046,CVE-2023-32209,Missing Patch,3.5,Low,2026-05-11,Patched,2026-07-02
+VUL00097,D0013,CVE-2022-75278,Privilege Issue,8.2,High,2025-11-24,Patched,2026-01-19
+VUL00098,D0093,CVE-2026-9977,Exposed Port,2.8,Low,2025-09-17,Not Patched,
+VUL00099,D0140,CVE-2025-43597,Weak Password,5.2,Medium,2025-01-05,Not Patched,
+VUL00100,D0052,CVE-2026-45698,Privilege Issue,6.6,Medium,2025-08-19,Patched,2025-10-05
+VUL00101,D0039,CVE-2024-9611,Weak Password,7.1,High,2025-11-28,Patched,2026-01-15
+VUL00102,D0022,,Privilege Issue,3.7,Low,2026-06-09,Not Patched,
+VUL00103,D0050,CVE-2023-53378,Unsupported OS,7.9,High,2025-06-08,Patched,2025-07-24
+VUL00104,D0014,CVE-2026-88086,Unsupported OS,8.2,High,2026-01-09,Risk Accepted,
+VUL00105,D0097,CVE-2023-47556,Weak Password,5.7,Medium,2025-03-06,Not Patched,
+VUL00106,D0098,CVE-2026-25088,Missing Patch,10.0,Critical,2026-09-04,Patched,2026-09-15
+VUL00107,D0097,CVE-2023-90952,Weak Password,4.2,Medium,2025-07-22,Patched,2025-09-06
+VUL00108,D0061,CVE-2026-34022,Missing Patch,5.6,Medium,2025-10-24,Patched,2025-11-11
+VUL00109,D0027,CVE-2024-62521,Unencrypted Service,8.8,High,2025-10-31,Patched,2025-11-13
+VUL00110,D0038,,Missing Patch,3.4,Low,2025-10-07,Patched,2025-10-19
+VUL00111,D0123,,Outdated Software,3.5,Low,2025-04-21,Pending,
+VUL00112,D0066,CVE-2026-24154,Unsupported OS,5.6,Medium,2025-08-27,Patched,2025-09-17
+VUL00113,D0061,,Misconfiguration,7.8,High,2026-07-08,Patched,2026-08-10
+VUL00114,D0122,,Unsupported OS,2.8,Low,2025-06-22,Patched,2025-07-06
+VUL00115,D0056,,Unencrypted Service,4.5,Medium,2025-03-31,Patched,2025-04-13
+VUL00116,D0017,,Weak Password,7.6,High,2025-08-19,Risk Accepted,
+VUL00117,D0059,CVE-2026-12156,Unsupported OS,9.4,Critical,2026-01-25,Patched,2026-02-17
+VUL00118,D0055,CVE-2022-43421,Unencrypted Service,3.9,Low,2025-09-24,Pending,
+VUL00119,D0125,,Missing Patch,8.4,High,2025-04-21,Pending,
+VUL00120,D0102,CVE-2026-34384,Unsupported OS,9.4,Critical,2025-02-03,Patched,2025-03-17
+VUL00121,D0011,CVE-2024-16531,Exposed Port,3.4,Low,2026-07-19,Pending,
+VUL00122,D0026,CVE-2021-56996,Missing Patch,8.1,High,2026-08-10,Pending,
+VUL00123,D0076,CVE-2022-96636,Exposed Port,6.8,Medium,2026-01-14,Patched,2026-03-14
+VUL00124,D0026,,Weak Password,3.6,Low,2025-12-13,Risk Accepted,
+VUL00125,D0107,CVE-2021-57275,Outdated Software,5.7,Medium,2025-08-17,Patched,2025-09-11
+VUL00126,D0070,CVE-2026-92007,Misconfiguration,3.9,Low,2025-11-23,Pending,
+VUL00127,D0121,CVE-2021-55736,Unsupported OS,2.6,Low,2026-01-27,Pending,
+VUL00128,D0020,CVE-2025-40659,Outdated Software,3.4,Low,2025-09-03,Pending,
+VUL00129,D0116,CVE-2022-7897,Unencrypted Service,3.1,Low,2026-02-02,Pending,
+VUL00130,D0142,CVE-2021-85523,Exposed Port,5.4,Medium,2025-04-02,Pending,
+VUL00131,D0142,CVE-2026-74164,Exposed Port,9.4,Critical,2026-03-31,Pending,
+VUL00132,D0126,,Missing Patch,9.7,Critical,2025-09-22,Patched,2025-11-11
+VUL00133,D0089,CVE-2021-35143,Exposed Port,4.0,Medium,2026-01-08,Patched,2026-01-30
+VUL00134,D0112,CVE-2026-36632,Outdated Software,2.9,Low,2025-04-16,Not Patched,
+VUL00135,D0120,CVE-2024-55809,Outdated Software,3.0,Low,2025-08-21,Patched,2025-09-12
+VUL00136,D0076,,Outdated Software,2.7,Low,2026-08-19,Patched,2026-09-15
+VUL00137,D0101,CVE-2025-44265,Unsupported OS,3.6,Low,2025-12-28,Pending,
+VUL00138,D0130,,Missing Patch,8.0,High,2025-06-14,Patched,2025-06-22
+VUL00139,D0125,,Misconfiguration,6.1,Medium,2026-03-14,Not Patched,
+VUL00140,D0138,,Weak Password,7.6,High,2026-01-03,Pending,
+VUL00141,D0119,CVE-2023-68084,Exposed Port,9.1,Critical,2026-09-14,Pending,
+VUL00142,D0038,,Unencrypted Service,3.1,Low,2026-08-13,Not Patched,
+VUL00143,D0125,CVE-2024-13707,Weak Password,7.5,High,2025-08-21,Patched,2025-09-16
+VUL00144,D0030,CVE-2026-45891,Unsupported OS,9.7,Critical,2026-04-18,Patched,2026-06-13
+VUL00145,D0050,,Exposed Port,6.8,Medium,2025-12-22,Risk Accepted,
+VUL00146,D0134,,Unencrypted Service,6.9,Medium,2026-08-05,Pending,
+VUL00147,D0106,,Privilege Issue,3.9,Low,2026-07-06,Not Patched,
+VUL00148,D0134,CVE-2024-77072,Misconfiguration,4.7,Medium,2025-06-04,Pending,
+VUL00149,D0057,,Unencrypted Service,2.7,Low,2025-11-03,Not Patched,
+VUL00150,D0019,,Outdated Software,4.8,Medium,2025-06-12,Patched,2025-08-07
+VUL00151,D0103,,Unsupported OS,5.7,Medium,2026-08-17,Patched,2026-09-06
+VUL00152,D0067,CVE-2026-88783,Privilege Issue,2.3,Low,2026-05-22,Patched,2026-07-11
+VUL00153,D0006,CVE-2022-7552,Privilege Issue,3.6,Low,2026-04-22,Patched,2026-05-22
+VUL00154,D0147,CVE-2026-1060,Outdated Software,8.5,High,2026-03-29,Pending,
+VUL00155,D0091,CVE-2023-4029,Privilege Issue,8.1,High,2026-02-09,Risk Accepted,
+VUL00156,D0059,CVE-2026-6472,Unencrypted Service,4.2,Medium,2025-06-23,Not Patched,
+VUL00157,D0017,CVE-2022-7900,Missing Patch,6.0,Medium,2025-05-02,Pending,
+VUL00158,D0023,CVE-2025-91211,Unsupported OS,8.1,High,2025-11-22,Patched,2025-11-24
+VUL00159,D0017,CVE-2026-59427,Missing Patch,8.3,High,2025-02-15,Patched,2025-03-16
+VUL00160,D0015,CVE-2022-64122,Misconfiguration,7.7,High,2026-08-09,Risk Accepted,
+VUL00161,D0065,CVE-2026-39398,Unsupported OS,6.9,Medium,2025-01-29,Risk Accepted,
+VUL00162,D0140,CVE-2022-33195,Unencrypted Service,4.3,Medium,2026-01-21,Patched,2026-02-15
+VUL00163,D0088,CVE-2023-74590,Misconfiguration,2.5,Low,2026-03-01,Risk Accepted,
+VUL00164,D0144,CVE-2021-54161,Unencrypted Service,3.1,Low,2025-02-24,Patched,2025-02-27
+VUL00165,D0149,CVE-2023-16565,Privilege Issue,2.3,Low,2025-09-27,Patched,2025-11-14
+VUL00166,D0050,,Outdated Software,3.6,Low,2026-05-11,Not Patched,
+VUL00167,D0029,,Weak Password,6.4,Medium,2026-04-10,Not Patched,
+VUL00168,D0041,,Misconfiguration,2.7,Low,2026-06-29,Patched,2026-07-01
+VUL00169,D0043,CVE-2026-88268,Weak Password,9.7,Critical,2026-08-06,Patched,2026-09-15
+VUL00170,D0007,CVE-2022-71997,Misconfiguration,6.4,Medium,2025-03-28,Risk Accepted,
+VUL00171,D0148,,Missing Patch,7.4,High,2026-02-13,Risk Accepted,
+VUL00172,D0116,CVE-2023-36446,Weak Password,6.9,Medium,2025-12-31,Patched,2026-02-20
+VUL00173,D0049,CVE-2022-69599,Exposed Port,4.8,Medium,2025-03-13,Risk Accepted,
+VUL00174,D0145,CVE-2022-31348,Unencrypted Service,7.6,High,2025-09-12,Patched,2025-11-03
+VUL00175,D0015,CVE-2021-35255,Unsupported OS,3.8,Low,2025-05-28,Pending,
+VUL00176,D0012,,Unsupported OS,6.8,Medium,2025-01-11,Patched,2025-01-24
+VUL00177,D0036,,Misconfiguration,6.2,Medium,2026-05-06,Patched,2026-05-22
+VUL00178,D0023,CVE-2022-28927,Missing Patch,2.2,Low,2026-08-14,Not Patched,
+VUL00179,D0099,,Unencrypted Service,9.8,Critical,2026-04-01,Patched,2026-04-15
+VUL00180,D0014,CVE-2024-69306,Missing Patch,8.9,High,2026-07-08,Pending,
+VUL00181,D0143,,Outdated Software,4.9,Medium,2025-08-30,Patched,2025-09-21
+VUL00182,D0001,,Unsupported OS,7.4,High,2025-03-17,Patched,2025-04-27
+VUL00183,D0078,CVE-2025-19507,Outdated Software,8.2,High,2025-11-14,Pending,
+VUL00184,D0070,,Privilege Issue,2.5,Low,2026-04-03,Patched,2026-05-20
+VUL00185,D0049,,Privilege Issue,7.4,High,2025-01-15,Patched,2025-03-03
+VUL00186,D0014,,Misconfiguration,3.1,Low,2025-12-03,Not Patched,
+VUL00187,D0020,CVE-2026-36953,Weak Password,2.2,Low,2026-08-11,Risk Accepted,
+VUL00188,D0059,CVE-2022-99616,Privilege Issue,7.1,High,2025-02-23,Patched,2025-04-13
+VUL00189,D0088,,Weak Password,8.5,High,2025-06-26,Patched,2025-07-19
+VUL00190,D0111,CVE-2025-56882,Misconfiguration,3.7,Low,2025-06-09,Patched,2025-06-13
+VUL00191,D0006,CVE-2024-58266,Missing Patch,8.4,High,2025-08-01,Patched,2025-08-08
+VUL00192,D0043,,Misconfiguration,5.9,Medium,2025-05-01,Patched,2025-05-08
+VUL00193,D0094,CVE-2026-82600,Unsupported OS,6.6,Medium,2025-11-07,Not Patched,
+VUL00194,D0090,CVE-2026-43751,Outdated Software,5.2,Medium,2026-02-12,Patched,2026-02-23
+VUL00195,D0146,CVE-2023-28268,Privilege Issue,4.4,Medium,2026-08-21,Patched,2026-09-15
+VUL00196,D0051,,Missing Patch,8.0,High,2026-03-14,Not Patched,
+VUL00197,D0107,CVE-2024-41859,Privilege Issue,9.5,Critical,2025-12-24,Not Patched,
+VUL00198,D0107,CVE-2024-64714,Outdated Software,6.7,Medium,2026-03-24,Not Patched,
+VUL00199,D0031,,Outdated Software,6.5,Medium,2025-11-26,Not Patched,
+VUL00200,D0119,CVE-2023-45185,Weak Password,6.8,Medium,2026-02-10,Not Patched,
+VUL00201,D0096,CVE-2023-55110,Privilege Issue,6.7,Medium,2025-04-12,Patched,2025-05-22
+VUL00202,D0080,,Privilege Issue,9.0,Critical,2025-01-03,Patched,2025-01-28
+VUL00203,D0012,,Unencrypted Service,8.8,High,2026-01-01,Pending,
+VUL00204,D0105,,Misconfiguration,8.7,High,2026-02-11,Pending,
+VUL00205,D0047,CVE-2022-61907,Unsupported OS,6.0,Medium,2026-06-04,Patched,2026-06-23
+VUL00206,D0042,CVE-2022-15405,Missing Patch,2.2,Low,2025-01-01,Pending,
+VUL00207,D0144,,Unencrypted Service,2.1,Low,2025-08-18,Pending,
+VUL00208,D0098,CVE-2024-50549,Misconfiguration,9.8,Critical,2025-09-29,Not Patched,
+VUL00209,D0025,CVE-2024-83581,Weak Password,9.1,Critical,2025-11-28,Patched,2025-12-28
+VUL00210,D0025,CVE-2023-99801,Misconfiguration,3.1,Low,2025-11-19,Pending,
+VUL00211,D0081,,Unsupported OS,3.8,Low,2026-07-14,Pending,
+VUL00212,D0076,,Weak Password,6.6,Medium,2026-05-28,Pending,
+VUL00213,D0089,,Unsupported OS,3.8,Low,2026-03-20,Patched,2026-05-08
+VUL00214,D0035,,Weak Password,6.4,Medium,2025-05-27,Pending,
+VUL00215,D0002,CVE-2026-40574,Privilege Issue,6.6,Medium,2025-05-13,Patched,2025-06-18
+VUL00216,D0017,CVE-2022-56526,Outdated Software,3.0,Low,2025-09-13,Patched,2025-10-22
+VUL00217,D0139,CVE-2026-1383,Unencrypted Service,6.9,Medium,2026-08-02,Patched,2026-09-15
+VUL00218,D0100,CVE-2026-36283,Outdated Software,7.1,High,2025-11-26,Patched,2026-01-07
+VUL00219,D0093,CVE-2026-39123,Unsupported OS,6.9,Medium,2025-01-29,Patched,2025-03-04
+VUL00220,D0070,CVE-2026-67705,Unencrypted Service,3.3,Low,2026-09-07,Patched,2026-09-15
+VUL00221,D0132,,Unsupported OS,3.5,Low,2025-04-02,Pending,
+VUL00222,D0146,CVE-2023-44116,Outdated Software,2.3,Low,2025-10-05,Pending,
+VUL00223,D0080,CVE-2021-76204,Misconfiguration,3.0,Low,2026-01-18,Risk Accepted,
+VUL00224,D0095,,Privilege Issue,8.7,High,2026-04-14,Not Patched,
+VUL00225,D0098,,Weak Password,7.3,High,2026-08-17,Patched,2026-09-15
+VUL00226,D0071,,Missing Patch,2.9,Low,2026-03-10,Not Patched,
+VUL00227,D0068,CVE-2025-42047,Unsupported OS,8.3,High,2026-07-09,Pending,
+VUL00228,D0094,,Exposed Port,6.3,Medium,2026-08-26,Patched,2026-09-15
+VUL00229,D0034,,Unsupported OS,9.1,Critical,2026-08-21,Patched,2026-09-15
+VUL00230,D0145,CVE-2024-3732,Missing Patch,7.4,High,2026-02-02,Not Patched,
+VUL00231,D0109,CVE-2021-87248,Missing Patch,3.0,Low,2026-05-25,Patched,2026-07-10
+VUL00232,D0067,,Weak Password,4.9,Medium,2025-01-28,Pending,
+VUL00233,D0121,,Unsupported OS,3.6,Low,2025-12-09,Patched,2025-12-26
+VUL00234,D0052,CVE-2026-36202,Weak Password,3.6,Low,2026-03-10,Patched,2026-05-05
+VUL00235,D0139,CVE-2021-15810,Weak Password,7.9,High,2025-09-06,Not Patched,
+VUL00236,D0031,,Missing Patch,7.8,High,2025-03-31,Patched,2025-05-01
+VUL00237,D0052,CVE-2024-2632,Privilege Issue,2.8,Low,2025-08-02,Patched,2025-08-20
+VUL00238,D0038,,Misconfiguration,5.9,Medium,2025-04-11,Pending,
+VUL00239,D0131,,Weak Password,5.9,Medium,2025-09-09,Not Patched,
+VUL00240,D0045,,Missing Patch,3.4,Low,2025-07-16,Patched,2025-08-18
+VUL00241,D0079,,Unsupported OS,4.3,Medium,2025-02-25,Patched,2025-04-19
+VUL00242,D0126,CVE-2024-34477,Unsupported OS,6.1,Medium,2025-04-25,Not Patched,
+VUL00243,D0029,,Unsupported OS,8.4,High,2026-05-03,Patched,2026-05-22
+VUL00244,D0005,,Unencrypted Service,2.1,Low,2026-08-29,Not Patched,
+VUL00245,D0035,,Misconfiguration,4.2,Medium,2025-06-18,Patched,2025-06-21
+VUL00246,D0062,CVE-2021-30381,Outdated Software,6.0,Medium,2025-04-08,Pending,
+VUL00247,D0122,,Privilege Issue,6.6,Medium,2025-12-16,Patched,2026-02-06
+VUL00248,D0058,CVE-2025-22403,Missing Patch,4.0,Medium,2025-08-17,Patched,2025-08-25
+VUL00249,D0021,,Privilege Issue,7.0,High,2025-02-18,Patched,2025-02-28
+VUL00250,D0142,CVE-2024-60203,Outdated Software,4.9,Medium,2026-03-05,Patched,2026-03-17
+VUL00251,D0107,,Missing Patch,3.3,Low,2025-02-24,Pending,
+VUL00252,D0003,CVE-2023-95245,Unsupported OS,5.7,Medium,2025-10-02,Not Patched,
+VUL00253,D0100,CVE-2026-33143,Unsupported OS,3.2,Low,2025-08-07,Pending,
+VUL00254,D0026,,Unsupported OS,2.8,Low,2025-02-14,Patched,2025-04-15
+VUL00255,D0034,CVE-2025-77736,Unencrypted Service,8.6,High,2025-01-28,Patched,2025-03-22
+VUL00256,D0070,CVE-2025-58563,Missing Patch,7.3,High,2025-12-31,Not Patched,
+VUL00257,D0076,,Unencrypted Service,5.7,Medium,2025-12-27,Patched,2026-02-23
+VUL00258,D0065,,Privilege Issue,8.3,High,2026-05-17,Patched,2026-05-26
+VUL00259,D0106,,Exposed Port,3.8,Low,2026-01-05,Patched,2026-01-06
+VUL00260,D0026,CVE-2023-64568,Unencrypted Service,9.0,Critical,2025-11-30,Patched,2025-12-20
+VUL00261,D0018,CVE-2022-93184,Exposed Port,8.4,High,2026-06-14,Not Patched,
+VUL00262,D0098,,Outdated Software,4.5,Medium,2025-11-02,Patched,2025-12-08
+VUL00263,D0061,CVE-2022-11019,Misconfiguration,9.8,Critical,2025-09-14,Pending,
+VUL00264,D0026,,Privilege Issue,3.8,Low,2026-09-03,Patched,2026-09-15
+VUL00265,D0067,CVE-2024-18367,Privilege Issue,6.2,Medium,2025-12-15,Pending,
+VUL00266,D0093,CVE-2023-1196,Misconfiguration,4.0,Medium,2025-05-05,Patched,2025-05-22
+VUL00267,D0054,CVE-2022-31091,Privilege Issue,4.2,Medium,2026-06-24,Patched,2026-07-13
+VUL00268,D0012,CVE-2023-29381,Privilege Issue,5.6,Medium,2025-05-30,Risk Accepted,
+VUL00269,D0014,CVE-2025-74013,Privilege Issue,8.8,High,2025-02-20,Patched,2025-03-08
+VUL00270,D0054,,Unsupported OS,3.8,Low,2026-04-12,Patched,2026-04-19
+VUL00271,D0049,CVE-2025-24491,Exposed Port,9.7,Critical,2026-06-27,Pending,
+VUL00272,D0041,CVE-2023-14119,Outdated Software,9.6,Critical,2025-08-20,Pending,
+VUL00273,D0134,,Weak Password,4.8,Medium,2026-07-25,Pending,
+VUL00274,D0032,,Unencrypted Service,9.3,Critical,2026-06-25,Not Patched,
+VUL00275,D0144,,Misconfiguration,3.0,Low,2025-07-05,Not Patched,
+VUL00276,D0035,CVE-2026-78100,Unsupported OS,8.2,High,2025-10-20,Patched,2025-11-06
+VUL00277,D0049,CVE-2024-94360,Weak Password,8.5,High,2025-12-14,Patched,2026-01-02
+VUL00278,D0114,,Misconfiguration,3.0,Low,2026-09-03,Patched,2026-09-07
+VUL00279,D0075,,Outdated Software,3.2,Low,2025-07-09,Not Patched,
+VUL00280,D0021,CVE-2021-50306,Misconfiguration,7.4,High,2025-01-26,Risk Accepted,
+VUL00281,D0035,CVE-2026-66267,Missing Patch,4.3,Medium,2025-08-15,Patched,2025-09-27
+VUL00282,D0066,,Privilege Issue,5.8,Medium,2025-11-10,Patched,2025-12-17
+VUL00283,D0035,CVE-2025-71738,Exposed Port,2.7,Low,2025-05-02,Risk Accepted,
+VUL00284,D0020,CVE-2025-87382,Missing Patch,2.4,Low,2026-09-07,Patched,2026-09-15
+VUL00285,D0042,CVE-2021-58757,Exposed Port,10.0,Critical,2026-04-28,Patched,2026-06-07
+VUL00286,D0150,,Misconfiguration,7.0,High,2026-08-08,Patched,2026-08-18
+VUL00287,D0024,CVE-2025-47771,Weak Password,9.5,Critical,2025-03-29,Pending,
+VUL00288,D0104,,Outdated Software,4.9,Medium,2026-03-13,Risk Accepted,
+VUL00289,D0096,,Privilege Issue,4.2,Medium,2025-02-23,Risk Accepted,
+VUL00290,D0100,CVE-2021-51982,Missing Patch,2.5,Low,2026-03-25,Pending,
+VUL00291,D0121,CVE-2024-54870,Unsupported OS,4.9,Medium,2025-12-14,Patched,2025-12-17
+VUL00292,D0080,,Misconfiguration,3.9,Low,2026-04-28,Not Patched,
+VUL00293,D0070,,Weak Password,8.9,High,2026-07-16,Pending,
+VUL00294,D0069,,Misconfiguration,8.4,High,2026-07-14,Patched,2026-07-19
+VUL00295,D0046,CVE-2022-26165,Exposed Port,2.9,Low,2025-02-18,Pending,
+VUL00296,D0122,CVE-2025-88001,Outdated Software,9.8,Critical,2025-07-18,Patched,2025-07-26
+VUL00297,D0023,CVE-2023-5857,Exposed Port,2.4,Low,2025-07-30,Patched,2025-08-14
+VUL00298,D0076,,Missing Patch,6.5,Medium,2026-04-11,Risk Accepted,
+VUL00299,D0148,,Unsupported OS,3.3,Low,2025-06-06,Patched,2025-08-02
+VUL00300,D0127,CVE-2021-39914,Unsupported OS,5.0,Medium,2025-10-13,Not Patched,
+VUL00301,D0014,,Unencrypted Service,3.7,Low,2025-12-29,Patched,2026-01-21
+VUL00302,D0053,CVE-2024-60230,Exposed Port,5.5,Medium,2025-06-12,Risk Accepted,
+VUL00303,D0043,CVE-2024-40863,Privilege Issue,5.3,Medium,2025-05-09,Pending,
+VUL00304,D0004,CVE-2022-19719,Unencrypted Service,4.2,Medium,2026-08-26,Patched,2026-09-15
+VUL00305,D0012,CVE-2022-49001,Unencrypted Service,4.9,Medium,2025-06-24,Not Patched,
+VUL00306,D0116,CVE-2025-86852,Exposed Port,6.3,Medium,2026-09-11,Patched,2026-09-15
+VUL00307,D0049,CVE-2024-30113,Weak Password,4.3,Medium,2025-02-10,Not Patched,
+VUL00308,D0110,CVE-2025-80034,Unsupported OS,2.4,Low,2025-04-22,Patched,2025-06-16
+VUL00309,D0024,,Unsupported OS,2.8,Low,2025-07-09,Not Patched,
+VUL00310,D0047,,Unencrypted Service,4.0,Medium,2025-10-14,Patched,2025-10-16
+VUL00311,D0120,,Exposed Port,6.9,Medium,2025-08-07,Not Patched,
+VUL00312,D0007,CVE-2026-99087,Unsupported OS,6.2,Medium,2026-07-16,Pending,
+VUL00313,D0129,CVE-2023-35460,Privilege Issue,7.2,High,2025-12-27,Risk Accepted,
+VUL00314,D0115,,Unencrypted Service,6.6,Medium,2026-01-18,Not Patched,
+VUL00315,D0090,,Outdated Software,7.9,High,2025-05-17,Risk Accepted,
+VUL00316,D0055,CVE-2025-34530,Privilege Issue,5.1,Medium,2025-11-07,Patched,2025-12-08
+VUL00317,D0084,,Exposed Port,2.5,Low,2026-06-25,Pending,
+VUL00318,D0047,CVE-2023-70460,Outdated Software,8.1,High,2026-05-08,Patched,2026-06-26
+VUL00319,D0104,,Unencrypted Service,9.7,Critical,2026-07-11,Pending,
+VUL00320,D0028,,Misconfiguration,2.9,Low,2026-01-18,Risk Accepted,
+VUL00321,D0073,,Missing Patch,5.3,Medium,2025-06-12,Patched,2025-07-28
+VUL00322,D0087,CVE-2021-95877,Missing Patch,3.4,Low,2026-04-21,Patched,2026-04-28
+VUL00323,D0099,CVE-2024-46988,Privilege Issue,3.5,Low,2026-01-12,Patched,2026-03-03
+VUL00324,D0094,,Exposed Port,3.6,Low,2025-02-26,Patched,2025-04-04
+VUL00325,D0057,CVE-2024-36860,Weak Password,7.5,High,2025-03-20,Patched,2025-04-08
+VUL00326,D0041,,Weak Password,7.7,High,2026-05-09,Not Patched,
+VUL00327,D0055,CVE-2026-30115,Missing Patch,5.4,Medium,2025-02-28,Patched,2025-03-01
+VUL00328,D0069,CVE-2022-5438,Misconfiguration,2.3,Low,2026-06-21,Risk Accepted,
+VUL00329,D0008,CVE-2024-78471,Outdated Software,7.0,High,2026-05-12,Patched,2026-05-29
+VUL00330,D0120,CVE-2026-14838,Exposed Port,5.8,Medium,2026-07-20,Pending,
+VUL00331,D0037,CVE-2024-7200,Weak Password,5.6,Medium,2026-08-08,Pending,
+VUL00332,D0005,,Privilege Issue,9.8,Critical,2025-02-14,Pending,
+VUL00333,D0075,CVE-2021-68323,Misconfiguration,2.4,Low,2026-04-27,Pending,
+VUL00334,D0095,CVE-2026-10351,Outdated Software,7.0,High,2025-05-16,Pending,
+VUL00335,D0025,,Privilege Issue,2.0,Low,2026-01-22,Risk Accepted,
+VUL00336,D0002,CVE-2022-99342,Missing Patch,6.0,Medium,2025-02-11,Not Patched,
+VUL00337,D0030,CVE-2025-6483,Unsupported OS,3.4,Low,2025-05-16,Patched,2025-07-09
+VUL00338,D0010,CVE-2025-9934,Exposed Port,3.0,Low,2025-04-09,Risk Accepted,
+VUL00339,D0051,CVE-2024-61712,Exposed Port,8.3,High,2026-08-03,Not Patched,
+VUL00340,D0123,CVE-2023-11401,Weak Password,8.7,High,2026-06-15,Patched,2026-06-23
+VUL00341,D0059,,Unsupported OS,8.7,High,2026-03-12,Pending,
+VUL00342,D0146,,Unsupported OS,5.0,Medium,2025-04-25,Not Patched,
+VUL00343,D0099,CVE-2024-3590,Missing Patch,3.0,Low,2026-06-04,Patched,2026-06-11
+VUL00344,D0065,CVE-2023-43839,Outdated Software,8.8,High,2025-12-01,Not Patched,
+VUL00345,D0071,CVE-2025-87949,Missing Patch,9.4,Critical,2025-06-10,Patched,2025-07-26
+VUL00346,D0068,CVE-2023-81961,Unsupported OS,7.1,High,2025-11-30,Patched,2026-01-14
+VUL00347,D0044,,Missing Patch,4.4,Medium,2025-01-03,Risk Accepted,
+VUL00348,D0056,CVE-2024-83491,Unsupported OS,4.0,Medium,2026-03-05,Patched,2026-03-20
+VUL00349,D0129,,Misconfiguration,5.5,Medium,2025-10-22,Risk Accepted,
+VUL00350,D0001,CVE-2026-18073,Outdated Software,3.2,Low,2025-06-07,Patched,2025-07-22
+VUL00351,D0028,,Privilege Issue,8.2,High,2025-08-29,not patched,2025-09-26
+VUL00352,D0079,,Outdated Software,6.1,Medium,2025-10-14,Patched,2025-11-16
+VUL00353,D0050,,Exposed Port,6.9,Medium,2026-05-26,Patched,2026-07-19
+VUL00354,D0009,CVE-2024-58277,Missing Patch,7.6,High,2025-08-24,Risk Accepted,
+VUL00355,D0097,,Exposed Port,2.3,Low,2026-08-05,Patched,2026-09-15
+VUL00356,D0018,CVE-2026-65586,Weak Password,9.3,Critical,2025-11-16,Pending,
+VUL00357,D0077,,Unsupported OS,8.6,High,2026-03-01,Pending,
+VUL00358,D0068,CVE-2024-94974,Weak Password,7.9,High,2026-05-30,Risk Accepted,
+VUL00359,D0116,CVE-2026-77285,Misconfiguration,2.9,Low,2025-09-09,Patched,2025-09-20
+VUL00360,D0134,CVE-2022-62399,Exposed Port,9.3,Critical,2025-06-28,Pending,
+VUL00361,D0083,,Missing Patch,4.1,Medium,2026-03-13,Not Patched,
+VUL00362,D0079,CVE-2024-91255,Unencrypted Service,8.1,High,2026-05-27,Not Patched,
+VUL00363,D0071,CVE-2021-21358,Weak Password,7.2,High,2025-12-17,Patched,2026-02-02
+VUL00364,D0060,,Unencrypted Service,5.1,Medium,2025-11-04,Patched,2025-12-29
+VUL00365,D0052,,Misconfiguration,6.4,Medium,2026-01-03,Pending,
+VUL00366,D0064,,Misconfiguration,4.4,Medium,2025-05-20,Risk Accepted,
+VUL00367,D0100,,Exposed Port,5.3,Medium,2025-12-24,Not Patched,
+VUL00368,D0124,,Outdated Software,7.4,High,2026-01-09,Patched,2026-03-08
+VUL00369,D0141,,Exposed Port,2.0,Low,2025-08-15,Patched,2025-10-06
+VUL00370,D0020,CVE-2021-14015,Unencrypted Service,9.2,Critical,2025-03-16,Pending,
+VUL00371,D0030,CVE-2026-50866,Missing Patch,9.4,Critical,2025-04-02,Patched,2025-05-22
+VUL00372,D0018,CVE-2021-15831,Unsupported OS,4.8,Medium,2025-08-05,Pending,
+VUL00373,D0119,CVE-2025-9415,Exposed Port,9.0,Critical,2026-07-13,Risk Accepted,
+VUL00374,D0115,,Missing Patch,9.0,Critical,2025-07-26,Patched,2025-08-19
+VUL00375,D0095,,Weak Password,2.5,Low,2025-05-04,Pending,
+VUL00376,D0008,CVE-2021-5652,Missing Patch,7.2,High,2025-03-05,Not Patched,
+VUL00377,D0125,,Unsupported OS,3.8,Low,2026-04-16,Not Patched,
+VUL00378,D0145,,Outdated Software,4.3,Medium,2026-02-11,Patched,2026-03-10
+VUL00379,D0045,,Privilege Issue,5.1,Medium,2026-06-23,Patched,2026-07-04
+VUL00380,D0058,CVE-2026-9048,Privilege Issue,7.6,High,2026-03-04,Patched,2026-03-24
+VUL00381,D0059,,Privilege Issue,8.9,High,2025-12-14,Pending,
+VUL00382,D0071,,Exposed Port,2.9,Low,2025-03-22,Not Patched,
+VUL00383,D0035,,Unencrypted Service,6.7,Medium,2025-10-26,Patched,2025-11-20
+VUL00384,D0029,CVE-2026-67356,Weak Password,4.3,Medium,2026-01-26,Patched,2026-03-14
+VUL00385,D0128,,Unsupported OS,4.4,Medium,2026-02-27,Not Patched,
+VUL00386,D0014,CVE-2025-77540,Unencrypted Service,4.8,Medium,2025-11-15,Patched,2025-12-16
+VUL00387,D0087,CVE-2022-86418,Unencrypted Service,3.1,Low,2026-05-16,Pending,
+VUL00388,D0118,CVE-2022-25528,Unencrypted Service,9.3,Critical,2025-12-08,Pending,
+VUL00389,D0089,,Missing Patch,7.5,High,2025-12-15,Patched,2026-01-26
+VUL00390,D0006,,Weak Password,2.1,Low,2025-05-06,Patched,2025-06-13
+VUL00391,D0122,CVE-2025-97850,Outdated Software,5.6,Medium,2025-04-23,Patched,2025-05-11
+VUL00392,D0113,CVE-2022-98526,Exposed Port,7.6,High,2025-12-21,Pending,
+VUL00393,D0046,CVE-2022-96811,Outdated Software,8.8,High,2026-09-01,Patched,2026-09-15
+VUL00394,D0033,,Unsupported OS,7.2,High,2025-02-03,Not Patched,
+VUL00395,D0095,,Misconfiguration,5.2,Medium,2025-07-07,Patched,2025-08-30
+VUL00396,D0045,CVE-2024-5187,Weak Password,8.5,High,2025-04-19,Patched,2025-05-13
+VUL00397,D0025,CVE-2024-32144,Misconfiguration,7.9,High,2025-08-15,Patched,2025-09-13
+VUL00398,D0143,,Missing Patch,3.6,Low,2026-01-09,Patched,2026-01-28
+VUL00399,D0087,CVE-2025-65942,Privilege Issue,2.7,Low,2025-05-08,Patched,2025-05-28
+VUL00400,D0118,,Misconfiguration,9.5,Critical,2025-03-13,Patched,2025-04-26
+VUL00401,D0132,,Unencrypted Service,7.4,High,2025-12-23,Patched,2025-12-27
+VUL00402,D0045,CVE-2025-56644,Unencrypted Service,4.6,Medium,2026-07-06,Patched,2026-09-03
+VUL00403,D0052,CVE-2026-79573,Missing Patch,8.8,High,2025-07-23,Patched,2025-09-11
+VUL00404,D0108,,Unencrypted Service,7.3,High,2026-07-17,Pending,
+VUL00405,D0121,CVE-2024-18926,Outdated Software,5.9,Medium,2025-06-06,Patched,2025-06-21
+VUL00406,D0113,CVE-2024-50217,Weak Password,8.9,High,2026-08-28,Not Patched,
+VUL00407,D0140,CVE-2023-75104,Unencrypted Service,4.5,Medium,2025-05-12,Not Patched,
+VUL00408,D0021,CVE-2021-11983,Weak Password,5.4,Medium,2025-10-26,Not Patched,
+VUL00409,D0098,CVE-2021-23301,Exposed Port,8.1,High,2025-11-24,Not Patched,
+VUL00410,D0026,,Outdated Software,6.1,Medium,2025-05-09,Patched,2025-06-23
+VUL00411,D0105,,Unsupported OS,4.0,Medium,2025-09-09,Patched,2025-10-03
+VUL00412,D0038,CVE-2021-27118,Outdated Software,6.8,Medium,2025-06-25,Patched,2025-08-17
+VUL00413,D0062,CVE-2026-88839,Unencrypted Service,8.4,High,2026-03-27,Pending,
+VUL00414,D0075,CVE-2022-4886,Outdated Software,7.5,High,2026-06-08,Risk Accepted,
+VUL00415,D0075,,Privilege Issue,8.3,High,2026-04-21,Not Patched,
+VUL00416,D0121,CVE-2024-99077,Unsupported OS,9.4,Critical,2026-05-16,Patched,2026-07-12
+VUL00417,D0129,,Unsupported OS,3.7,Low,2025-04-13,Patched,2025-04-26
+VUL00418,D0063,CVE-2023-61729,Exposed Port,7.6,High,2025-08-16,Patched,2025-09-07
+VUL00419,D0015,,Unsupported OS,5.6,Medium,2026-02-18,Patched,2026-04-12
+VUL00420,D0117,CVE-2024-76442,Unsupported OS,7.8,High,2025-01-24,Patched,2025-02-21
+VUL00421,D0132,CVE-2021-56163,Exposed Port,9.5,Critical,2025-01-20,Not Patched,
+VUL00422,D0089,CVE-2023-66071,Unencrypted Service,8.9,High,2026-01-17,Not Patched,
+VUL00423,D0067,CVE-2023-26623,Exposed Port,2.5,Low,2025-04-20,Pending,
+VUL00424,D0073,,Exposed Port,6.1,Medium,2026-06-17,Patched,2026-07-25
+VUL00425,D0002,,Outdated Software,2.0,Low,2025-02-21,Patched,2025-04-05
+VUL00426,D0125,CVE-2025-16958,Misconfiguration,2.8,Low,2026-06-10,Pending,
+VUL00427,D0038,CVE-2025-29886,Weak Password,5.8,Medium,2026-08-19,Pending,
+VUL00428,D0123,CVE-2021-69777,Weak Password,9.0,Critical,2026-07-02,Patched,2026-07-29
+VUL00429,D0093,CVE-2021-69147,Exposed Port,5.7,Medium,2026-04-22,Not Patched,
+VUL00430,D0082,CVE-2021-44750,Missing Patch,8.0,High,2026-03-27,Patched,2026-04-05
+VUL00431,D0058,,Exposed Port,3.3,Low,2026-06-15,Patched,2026-08-05
+VUL00432,D0087,CVE-2022-11937,Privilege Issue,8.3,High,2026-03-23,Patched,2026-04-24
+VUL00433,D0146,,Privilege Issue,4.0,Medium,2025-10-24,Patched,2025-11-02
+VUL00434,D0047,CVE-2024-56453,Unsupported OS,8.3,High,2026-03-13,Patched,2026-04-22
+VUL00435,D0024,CVE-2024-83056,Unsupported OS,8.9,High,2025-03-06,Not Patched,
+VUL00436,D0099,CVE-2023-34008,Misconfiguration,3.7,Low,2025-04-23,Patched,2025-05-04
+VUL00437,D0045,,Misconfiguration,6.3,Medium,2026-02-28,Not Patched,
+VUL00438,D0032,CVE-2024-2622,Privilege Issue,3.9,Low,2025-10-22,Patched,2025-11-04
+VUL00439,D0107,CVE-2024-40521,Unencrypted Service,8.8,High,2025-11-15,Risk Accepted,
+VUL00440,D0081,CVE-2024-29530,Missing Patch,4.4,Medium,2026-03-15,Patched,2026-03-25
+VUL00441,D0033,CVE-2024-62744,Unencrypted Service,9.2,Critical,2025-04-19,Risk Accepted,
+VUL00442,D0090,CVE-2022-41677,Exposed Port,2.5,Low,2025-02-10,Not Patched,
+VUL00443,D0014,CVE-2024-82219,Exposed Port,6.4,Medium,2026-01-18,Pending,
+VUL00444,D0140,,Weak Password,5.9,Medium,2025-08-13,Patched,2025-09-13
+VUL00445,D0079,,Misconfiguration,2.7,Low,2025-08-22,Patched,2025-09-07
+VUL00446,D0023,,Missing Patch,2.2,Low,2025-09-27,Patched,2025-10-27
+VUL00447,D0108,CVE-2026-6587,Exposed Port,8.7,High,2026-04-02,Patched,2026-05-21
+VUL00448,D0013,CVE-2024-58750,Privilege Issue,8.9,High,2026-05-26,Not Patched,
+VUL00449,D0066,,Unencrypted Service,4.5,Medium,2026-04-11,Patched,2026-06-06
+VUL00450,D0150,,Missing Patch,5.8,Medium,2025-07-27,Patched,2025-09-15
+VUL00451,D0004,CVE-2025-97434,Misconfiguration,3.7,Low,2025-02-26,Risk Accepted,
+VUL00452,D0131,CVE-2024-26965,Missing Patch,3.5,Low,2025-12-10,Not Patched,
+VUL00453,D0055,CVE-2024-93054,Unsupported OS,2.6,Low,2025-02-24,Patched,2025-03-22
+VUL00454,D0129,,Privilege Issue,9.5,Critical,2025-04-09,Pending,
+VUL00455,D0135,CVE-2025-83015,Privilege Issue,6.4,Medium,2026-04-24,Risk Accepted,
+VUL00456,D0120,CVE-2025-12351,Privilege Issue,7.6,High,2025-12-31,Pending,
+VUL00457,D0076,,Exposed Port,5.3,Medium,2026-09-09,Pending,
+VUL00458,D0046,CVE-2023-13639,Outdated Software,8.4,High,2026-08-27,Pending,
+VUL00459,D0053,,Exposed Port,9.6,Critical,2026-07-06,Not Patched,
+VUL00460,D0134,,Unencrypted Service,8.9,High,2026-02-06,Pending,
+VUL00461,D0005,,Unsupported OS,2.2,Low,2025-05-30,Patched,2025-06-24
+VUL00462,D0059,,Unencrypted Service,10.0,Critical,2025-03-03,Not Patched,
+VUL00463,D0025,CVE-2024-50010,Weak Password,4.2,Medium,2025-04-07,Patched,2025-05-24
+VUL00464,D0056,CVE-2023-63440,Exposed Port,4.7,Medium,2025-08-17,Not Patched,
+VUL00465,D0064,CVE-2026-10260,Outdated Software,7.7,High,2025-02-24,Pending,
+VUL00466,D0070,,Missing Patch,8.3,High,2026-07-07,Risk Accepted,
+VUL00467,D0123,CVE-2024-72138,Privilege Issue,2.4,Low,2026-08-28,Not Patched,
+VUL00468,D0018,CVE-2024-50381,Missing Patch,3.1,Low,2026-02-12,Not Patched,
+VUL00469,D0051,CVE-2021-37797,Misconfiguration,4.7,Medium,2025-04-27,Pending,
+VUL00470,D0089,,Misconfiguration,7.9,High,2025-05-04,Risk Accepted,
+VUL00471,D0143,,Unsupported OS,8.6,High,2025-11-08,Pending,
+VUL00472,D0017,CVE-2025-44485,Outdated Software,3.4,Low,2025-09-08,Risk Accepted,
+VUL00473,D0013,CVE-2026-60134,Outdated Software,9.8,Critical,2025-11-16,Patched,2025-11-28
+VUL00474,D0104,,Misconfiguration,7.7,High,2025-08-09,Patched,2025-08-25
+VUL00475,D0020,CVE-2021-39319,Privilege Issue,3.6,Low,2025-08-11,Not Patched,
+VUL00476,D0132,,Missing Patch,6.6,Medium,2025-05-07,Pending,
+VUL00477,D0123,,Unencrypted Service,8.3,High,2025-03-18,Pending,
+VUL00478,D0046,CVE-2024-36070,Missing Patch,2.8,Low,2025-05-25,Not Patched,
+VUL00479,D0088,,Outdated Software,9.1,Critical,2025-03-24,Risk Accepted,
+VUL00480,D0146,CVE-2021-87827,Unencrypted Service,5.4,Medium,2026-05-18,Patched,2026-05-28
+VUL00481,D0100,CVE-2026-83987,Unsupported OS,8.5,High,2026-08-24,Pending,
+VUL00482,D0102,CVE-2024-7752,Exposed Port,5.1,Medium,2025-04-05,Pending,
+VUL00483,D0137,CVE-2022-58894,Unsupported OS,9.2,Critical,2025-11-21,Patched,2025-12-24
+VUL00484,D0119,CVE-2022-9629,Misconfiguration,2.8,Low,2026-04-05,Not Patched,
+VUL00485,D0023,CVE-2026-99580,Privilege Issue,5.9,Medium,2026-09-12,Not Patched,
+VUL00486,D0001,CVE-2024-22079,Unencrypted Service,3.0,Low,2025-01-12,Pending,
+VUL00487,D0087,,Misconfiguration,3.5,Low,2025-11-10,Pending,
+VUL00488,D0003,CVE-2021-56056,Unencrypted Service,3.8,Low,2025-01-01,Pending,
+VUL00489,D0088,CVE-2025-55343,Unencrypted Service,8.7,High,2026-03-10,Patched,2026-04-18
+VUL00490,D0131,CVE-2022-2010,Misconfiguration,5.9,Medium,2026-09-08,Patched,2026-09-15
+VUL00491,D0037,,Privilege Issue,3.3,Low,2026-08-19,Pending,
+VUL00492,D0053,,Unsupported OS,5.8,Medium,2025-01-27,Patched,2025-03-16
+VUL00493,D0084,CVE-2023-29097,Outdated Software,5.9,Medium,2025-10-21,Pending,
+VUL00494,D0037,CVE-2021-67226,Weak Password,4.1,Medium,2026-08-17,Risk Accepted,
+VUL00495,D0034,CVE-2023-10964,Missing Patch,3.2,Low,2025-08-16,Patched,2025-09-15
+VUL00496,D0108,,Unsupported OS,5.1,Medium,2025-06-17,Not Patched,
+VUL00497,D0147,CVE-2026-85786,Privilege Issue,4.2,Medium,2025-01-04,Risk Accepted,
+VUL00498,D0026,,Exposed Port,4.3,Medium,2025-08-26,Pending,
+VUL00499,D0046,CVE-2024-1319,Misconfiguration,3.2,Low,2026-03-09,Pending,
+VUL00500,D0039,CVE-2021-8977,Outdated Software,8.4,High,2026-07-23,Risk Accepted,

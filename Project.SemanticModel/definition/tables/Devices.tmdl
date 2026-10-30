@@ -1,0 +1,109 @@
+table Devices
+	lineageTag: 6246960b-dbfd-4b21-8c36-21e4dab3088c
+
+	column DeviceID
+		dataType: string
+		isHidden
+		lineageTag: 5c66cf5c-b8cc-45dc-a444-020d3eb1a5fb
+		summarizeBy: none
+		sourceColumn: DeviceID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AssetTag
+		dataType: string
+		isHidden
+		lineageTag: 3f42acb7-cace-4c35-8f95-9ffb22e5b1f4
+		summarizeBy: none
+		sourceColumn: AssetTag
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeviceType
+		dataType: string
+		lineageTag: 2d4eb892-f123-4ded-9573-06232bbbeb8d
+		summarizeBy: none
+		sourceColumn: DeviceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column OperatingSystem
+		dataType: string
+		lineageTag: b69814a6-75c2-4c4e-93f1-af00f1734903
+		summarizeBy: none
+		sourceColumn: OperatingSystem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Department
+		dataType: string
+		lineageTag: c1866d56-f343-4905-8f86-1d6e7b58c613
+		summarizeBy: none
+		sourceColumn: Department
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 3228df4f-064d-4fa1-b253-fb7b2085b87a
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Criticality
+		dataType: string
+		lineageTag: 118ff5ef-4ffc-4fab-a11b-6706bf198ef2
+		summarizeBy: none
+		sourceColumn: Criticality
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 56903255-5141-4953-9add-e343efdaa015
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy Device
+		lineageTag: 41ea5fe4-4a3b-490f-8a85-e70ca634bfe8
+
+		level Location
+			lineageTag: 352f1b40-9a30-4c44-bf30-d4579d4b0d1c
+			column: Location
+
+		level Department
+			lineageTag: e2e28704-c5d7-4a76-a6b7-5804e7152076
+			column: Department
+
+		level DeviceType
+			lineageTag: 94188d96-0786-4536-b5b2-5fdf550ab718
+			column: DeviceType
+
+		level DeviceID
+			lineageTag: 7f2b6a69-70a9-41f4-bdf0-a0bf7d1cdca9
+			column: DeviceID
+
+	partition Devices = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Kritika.Chhabra\Downloads\PowerBI_Project\Devices.csv"),[Delimiter=",", Columns=8, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}, {"Column6", type text}, {"Column7", type text}, {"Column8", type text}}),
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true]),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"DeviceID", type text}, {"AssetTag", type text}, {"DeviceType", type text}, {"OperatingSystem", type text}, {"Department", type text}, {"Location", type text}, {"Criticality", type text}, {"Status", type text}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type1",{{"Criticality", Text.Trim, type text}, {"Department", Text.Trim, type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Trimmed Text",{{"Criticality", Text.Proper, type text}})
+				in
+				    #"Capitalized Each Word"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

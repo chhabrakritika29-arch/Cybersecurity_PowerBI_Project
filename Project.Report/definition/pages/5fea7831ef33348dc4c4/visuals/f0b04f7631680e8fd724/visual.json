@@ -1,0 +1,199 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "f0b04f7631680e8fd724",
+  "position": {
+    "x": 1038,
+    "y": 603,
+    "z": 10000,
+    "height": 477,
+    "width": 882,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "columnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Devices"
+                        }
+                      },
+                      "Hierarchy": "Device"
+                    }
+                  },
+                  "Level": "Location"
+                }
+              },
+              "queryRef": "Devices.Device.Location",
+              "nativeQueryRef": "Device Location",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Devices"
+                        }
+                      },
+                      "Hierarchy": "Device"
+                    }
+                  },
+                  "Level": "Department"
+                }
+              },
+              "queryRef": "Devices.Device.Department",
+              "nativeQueryRef": "Device Department",
+              "active": false
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Devices"
+                        }
+                      },
+                      "Hierarchy": "Device"
+                    }
+                  },
+                  "Level": "DeviceType"
+                }
+              },
+              "queryRef": "Devices.Device.DeviceType",
+              "nativeQueryRef": "Device DeviceType",
+              "active": false
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Devices"
+                        }
+                      },
+                      "Hierarchy": "Device"
+                    }
+                  },
+                  "Level": "DeviceID"
+                }
+              },
+              "queryRef": "Devices.Device.DeviceID",
+              "nativeQueryRef": "Device DeviceID",
+              "active": false
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Measure"
+                    }
+                  },
+                  "Property": "Total Vulnerabilities"
+                }
+              },
+              "queryRef": "Measure.Total Vulnerabilities",
+              "nativeQueryRef": "Total Vulnerabilities"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Devices"
+                      }
+                    },
+                    "Hierarchy": "Device"
+                  }
+                },
+                "Level": "Location"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Devices"
+                      }
+                    },
+                    "Hierarchy": "Device"
+                  }
+                },
+                "Level": "Department"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Devices"
+                      }
+                    },
+                    "Hierarchy": "Device"
+                  }
+                },
+                "Level": "DeviceType"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "HierarchyLevel": {
+                "Expression": {
+                  "Hierarchy": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Devices"
+                      }
+                    },
+                    "Hierarchy": "Device"
+                  }
+                },
+                "Level": "DeviceID"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

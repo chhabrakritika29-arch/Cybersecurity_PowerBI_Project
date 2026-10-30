@@ -1,0 +1,143 @@
+table Vulnerabilities
+	lineageTag: cb359990-bad2-44f0-9887-bb5e5c8147b1
+
+	column VulnerabilityID
+		dataType: string
+		isHidden
+		lineageTag: 54811584-4b7f-4cbf-99cf-1326a042e5f7
+		summarizeBy: none
+		sourceColumn: VulnerabilityID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeviceID
+		dataType: string
+		isHidden
+		lineageTag: b119795a-7166-40a2-adfd-a903ce1bf91d
+		summarizeBy: none
+		sourceColumn: DeviceID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CVE
+		dataType: string
+		lineageTag: ab0f134d-ec23-4864-8dec-829f97bed04f
+		summarizeBy: none
+		sourceColumn: CVE
+
+		annotation SummarizationSetBy = Automatic
+
+	column VulnerabilityType
+		dataType: string
+		lineageTag: e55d1495-5211-4cb1-b015-086eebdda5cf
+		summarizeBy: none
+		sourceColumn: VulnerabilityType
+
+		annotation SummarizationSetBy = Automatic
+
+	column RiskScore
+		dataType: double
+		formatString: 0.0
+		lineageTag: dbe53d5b-eb3b-420f-82b3-61df4e9f1bad
+		summarizeBy: sum
+		sourceColumn: RiskScore
+
+		annotation SummarizationSetBy = Automatic
+
+	column RiskLevel
+		dataType: string
+		lineageTag: 03c31065-e554-4764-b8cc-90f01da2318c
+		summarizeBy: none
+		sourceColumn: RiskLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column DiscoveredDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 201246b9-096e-4e9b-b814-88bf29ed2e64
+		summarizeBy: none
+		sourceColumn: DiscoveredDate
+
+		variation Variation
+			isDefault
+			relationship: 294c713a-7e73-4c42-a618-16e1e3b779d7
+			defaultHierarchy: LocalDateTable_62bf5f31-fc78-41c4-bfcf-c7197678ca11.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column PatchStatus
+		dataType: string
+		lineageTag: 497643d1-89ef-4429-a6b7-0afb9fe4e405
+		summarizeBy: none
+		sourceColumn: PatchStatus
+
+		annotation SummarizationSetBy = Automatic
+
+	column PatchDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: dd22f893-3e32-41ed-85d9-d17283ad6047
+		summarizeBy: none
+		sourceColumn: PatchDate
+
+		variation Variation
+			isDefault
+			relationship: b1a6d395-56ec-4158-b1ad-41b63ae70637
+			defaultHierarchy: LocalDateTable_52da5e55-61bd-459c-bce1-3790bac69d7b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Discovered Date' =
+			
+			DATEVALUE(Vulnerabilities[DiscoveredDate])
+		formatString: Long Date
+		lineageTag: 9b30b2b7-c0c1-4590-8df4-4a5a0325b4dc
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Patch Date' = DATEVALUE(Vulnerabilities[PatchDate])
+		formatString: Long Date
+		lineageTag: f2400e35-119f-49b7-8bbe-47542c1544a5
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: f159f5bc-1f3f-479f-9f06-b9bce367ae68
+			defaultHierarchy: LocalDateTable_3622eff5-2d0d-4c37-93ec-a47c153eafb5.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Vulnerabilities = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Kritika.Chhabra\Downloads\PowerBI_Project\Vulnerabilities.csv"),[Delimiter=",", Columns=9, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"VulnerabilityID", type text}, {"DeviceID", type text}, {"CVE", type text}, {"VulnerabilityType", type text}, {"RiskScore", type number}, {"RiskLevel", type text}, {"DiscoveredDate", type date}, {"PatchStatus", type text}, {"PatchDate", type date}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"RiskLevel", Text.Trim, type text}, {"PatchStatus", Text.Trim, type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Trimmed Text",{{"RiskLevel", Text.Proper, type text}, {"PatchStatus", Text.Proper, type text}})
+				in
+				    #"Capitalized Each Word"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

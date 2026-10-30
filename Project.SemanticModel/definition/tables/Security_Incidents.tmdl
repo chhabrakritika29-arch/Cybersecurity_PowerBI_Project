@@ -1,0 +1,141 @@
+table Security_Incidents
+	lineageTag: e8c27d08-7f5b-4125-a03c-dc1e10c3c6c5
+
+	column IncidentID
+		dataType: string
+		isHidden
+		lineageTag: 1df7965a-fd81-4008-92b0-f21dbdbeb4e8
+		summarizeBy: none
+		sourceColumn: IncidentID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column IncidentDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5d606ee8-4da8-4d85-8efd-f0ea667efede
+		summarizeBy: none
+		sourceColumn: IncidentDate
+
+		variation Variation
+			isDefault
+			relationship: b6d90b5c-0383-4710-b655-87b915b866ba
+			defaultHierarchy: LocalDateTable_ea8cbb9c-2a75-4de2-bcce-2ae8152c0829.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeviceID
+		dataType: string
+		isHidden
+		lineageTag: 2c08e2d2-0994-4628-8096-020eaabe0b3a
+		summarizeBy: none
+		sourceColumn: DeviceID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column UserID
+		dataType: string
+		isHidden
+		lineageTag: b0cee604-aa3e-42e0-9da8-15796f79a395
+		summarizeBy: none
+		sourceColumn: UserID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column AttackType
+		dataType: string
+		lineageTag: cc97d31f-0f8a-4464-97ea-bc6bac6668d2
+		summarizeBy: none
+		sourceColumn: AttackType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Severity
+		dataType: string
+		lineageTag: f4b3ab3a-cde1-4052-8e2a-52c82bdf69d1
+		summarizeBy: none
+		sourceColumn: Severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 4a866dad-9ba3-4c9f-a0d3-f4c4086c334f
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetectionTime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 64332cc5-f78f-4cc8-a0ac-787d2b3bd916
+		summarizeBy: none
+		sourceColumn: DetectionTime
+
+		variation Variation
+			isDefault
+			relationship: c7d8644c-307a-4765-8585-b4bae2885342
+			defaultHierarchy: LocalDateTable_afe4ac47-0a79-4ae1-98b8-11cf97e24932.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResolutionTime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 605690f8-394e-499f-bf96-bb02eaca33fa
+		summarizeBy: none
+		sourceColumn: ResolutionTime
+
+		variation Variation
+			isDefault
+			relationship: f8a37b41-29e9-4f5d-a40d-2e0947ae1f01
+			defaultHierarchy: LocalDateTable_ba5fe529-91e4-4d29-abd5-68960bebd59f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column DetectionSource
+		dataType: string
+		lineageTag: 2523a8d0-c01a-47b1-8446-88bc6034f055
+		summarizeBy: none
+		sourceColumn: DetectionSource
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Incident Date' =
+			
+			DATEVALUE(Security_Incidents[IncidentDate])
+		formatString: Long Date
+		lineageTag: 0be0a5b2-f8f6-4735-9a64-be2e91d0c0bc
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Security_Incidents = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Kritika.Chhabra\Downloads\PowerBI_Project\Security_Incidents.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"IncidentID", type text}, {"IncidentDate", type datetime}, {"DeviceID", type text}, {"UserID", type text}, {"AttackType", type text}, {"Severity", type text}, {"Status", type text}, {"DetectionTime", type datetime}, {"ResolutionTime", type datetime}, {"DetectionSource", type text}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"Severity", Text.Trim, type text}, {"Status", Text.Trim, type text}, {"DetectionSource", Text.Trim, type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Trimmed Text",{{"Status", Text.Proper, type text}, {"Severity", Text.Proper, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","In-Progress","In Progress",Replacer.ReplaceText,{"Status"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","","Unknown",Replacer.ReplaceValue,{"DetectionSource"})
+				in
+				    #"Replaced Value1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

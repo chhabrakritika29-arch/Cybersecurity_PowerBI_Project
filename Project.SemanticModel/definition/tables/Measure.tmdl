@@ -1,0 +1,269 @@
+table Measure
+	lineageTag: ba38e423-c995-4a9e-a7e9-5c114eef5352
+
+	measure 'Critical Incident %' =
+			
+			DIVIDE(
+			    [Critical Incidents],
+			    [Total Incidents],
+			    0
+			)
+		displayFolder: Incident KPIs
+		lineageTag: ea06f94f-338a-4705-a8e1-08e5e764c820
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Critical Incidents' =
+			
+			CALCULATE(
+			    [Total Incidents],
+			    Security_Incidents[Severity] = "Critical"
+			)
+		formatString: 0
+		displayFolder: Incident KPIs
+		lineageTag: efbeb807-9340-4651-9e72-5c51804e9148
+
+	measure 'High Severity Incidents' =
+			
+			CALCULATE(
+			    [Total Incidents],
+			    Security_Incidents[Severity] = "High"
+			)
+		formatString: 0
+		displayFolder: Incident KPIs
+		lineageTag: e5f7e33e-e705-4981-a80d-675c9de5047a
+
+	measure 'In Progress Incidents' =
+			
+			CALCULATE(
+			    [Total Incidents],
+			    Security_Incidents[Status] = "In Progress"
+			)
+		formatString: 0
+		displayFolder: Incident KPIs
+		lineageTag: ba83d0c4-c049-49fe-a4bf-9931b90bb387
+
+	measure 'Open Incidents' =
+			
+			CALCULATE(
+			    [Total Incidents],
+			    Security_Incidents[Status] = "Open"
+			)
+		formatString: 0
+		displayFolder: Incident KPIs
+		lineageTag: 70a9c42d-9578-460d-b470-87ca76021873
+
+	measure 'Total Incidents' =
+			
+			COUNTROWS(Security_Incidents)
+		formatString: 0
+		displayFolder: Incident KPIs
+		lineageTag: 740d74d3-e214-439c-ae74-c45630f21bcb
+
+	measure 'Blocked Traffic' =
+			
+			CALCULATE(
+			    [Total Network Logs],
+			    Network_Logs[Action] = "Blocked"
+			)
+		formatString: 0
+		displayFolder: Network KPIs
+		lineageTag: 54e0649b-bac5-4d7e-a3cf-5a845e9e6775
+
+	measure 'Blocked Traffic %' =
+			
+			DIVIDE(
+			    [Blocked Traffic],
+			    [Total Network Logs],
+			    0
+			)
+		displayFolder: Network KPIs
+		lineageTag: 76552062-7461-4124-a052-e7c377cd2703
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Suspicious Traffic' =
+			
+			CALCULATE(
+			    [Total Network Logs],
+			    Network_Logs[Action] = "Suspicious"
+			)
+		formatString: 0
+		displayFolder: Network KPIs
+		lineageTag: 700836b7-4dd9-4ef5-8baa-8b8cf43ded5d
+
+	measure 'Total Bytes' =
+			
+			SUM(Network_Logs[BytesTransferred])
+		formatString: 0
+		displayFolder: Network KPIs
+		lineageTag: 7f0f844e-0711-4b33-83c7-678cf8919fa1
+
+	measure 'Total Network Logs' =
+			
+			COUNTROWS(Network_Logs)
+		formatString: 0
+		displayFolder: Network KPIs
+		lineageTag: c4ec46fc-c5d7-403d-8874-edd1bc6963db
+
+	measure 'Critical Vulnerabilities' =
+			
+			CALCULATE(
+			    [Total Vulnerabilities],
+			    Vulnerabilities[RiskLevel] = "Critical"
+			)
+		formatString: 0
+		displayFolder: Vulnerability KPIs
+		lineageTag: 9f4d21d8-7051-4304-b972-bb78c46de7ec
+
+	measure 'High Risk Vulnerabilities' =
+			
+			CALCULATE(
+			    [Total Vulnerabilities],
+			    Vulnerabilities[RiskLevel] = "High"
+			)
+		formatString: 0
+		displayFolder: Vulnerability KPIs
+		lineageTag: 45ae959b-30f4-45fa-8b76-0555a7687300
+
+	measure 'Pending Patches' =
+			
+			CALCULATE(
+			    [Total Vulnerabilities],
+			    Vulnerabilities[PatchStatus] = "Pending"
+			)
+		formatString: 0
+		displayFolder: Vulnerability KPIs
+		lineageTag: 15fe3a64-a6c4-462c-a98f-200aaec0f193
+
+	measure 'Total Vulnerabilities' =
+			
+			COUNTROWS(Vulnerabilities)
+		formatString: 0
+		displayFolder: Vulnerability KPIs
+		lineageTag: 3f01006f-cc66-42ee-9b2a-69b957fe27d1
+
+	measure 'Unpatched Vulnerabilities' =
+			
+			CALCULATE(
+			    [Total Vulnerabilities],
+			    Vulnerabilities[PatchStatus] = "Not Patched"
+			)
+		formatString: 0
+		displayFolder: Vulnerability KPIs
+		lineageTag: 5a4ff5a2-d6bb-4a82-9bae-d91dc75a5086
+
+	measure 'Vulnerable Devices' =
+			
+			DISTINCTCOUNT(Vulnerabilities[DeviceID])
+		formatString: 0
+		displayFolder: Vulnerability KPIs
+		lineageTag: 6342e41d-f228-4682-9ff4-56aff88fd464
+
+	measure 'Total Devices' =
+			
+			DISTINCTCOUNT(Devices[DeviceID])
+		formatString: 0
+		displayFolder: Device KPIs
+		lineageTag: 0b4a44c9-19a0-4cf6-8985-f8e4612dc007
+
+	measure 'Active Devices' =
+			
+			CALCULATE(
+			    [Total Devices],
+			    Devices[Status] = "Active"
+			)
+		formatString: 0
+		displayFolder: Device KPIs
+		lineageTag: 94c016c6-9660-4ca1-82d8-985755c32a82
+
+	measure 'Previous Year Incidents' =
+			
+			CALCULATE(
+			    [Total Incidents],
+			    SAMEPERIODLASTYEAR('Date'[Date])
+			)
+		formatString: 0
+		displayFolder: Time Intelligence
+		lineageTag: 325b8204-3e44-4998-af25-a22a2cc17172
+
+	measure 'Incident Growth' =
+			
+			[Total Incidents] - [Previous Year Incidents]
+		formatString: 0
+		displayFolder: Time Intelligence
+		lineageTag: e3e45068-0cf7-44d4-b50c-1d9c3c4262ce
+
+	measure 'Incident Growth %' =
+			
+			DIVIDE(
+			    [Incident Growth],
+			    [Previous Year Incidents],
+			    0
+			)
+		displayFolder: Time Intelligence
+		lineageTag: 62d9f5d3-5265-4d14-955d-46309df3284f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Detection Delay (Hours)' =
+			
+			AVERAGEX(
+			    FILTER(
+			        Security_Incidents,
+			        NOT ISBLANK(Security_Incidents[IncidentDate]) &&
+			        NOT ISBLANK(Security_Incidents[DetectionTime])
+			    ),
+			    DATEDIFF(
+			        Security_Incidents[IncidentDate],
+			        Security_Incidents[DetectionTime],
+			        HOUR
+			    )
+			)
+		displayFolder: Incident Performance
+		lineageTag: 1b71eb9d-45df-43b4-a87e-62952c375f62
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Resolution Time' =
+			
+			AVERAGEX(
+			    FILTER(
+			        Security_Incidents,
+			        NOT ISBLANK(Security_Incidents[ResolutionTime])
+			    ),
+			    DATEDIFF(
+			        Security_Incidents[DetectionTime],
+			        Security_Incidents[ResolutionTime],
+			        HOUR
+			    )
+			)
+		formatString: 0.0
+		displayFolder: Incident Performance
+		lineageTag: a79ddb2c-3f67-40b5-9874-1eddee6a5522
+
+	column Measures
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 8eaa3eba-c886-4e92-b19f-bbb74f43e446
+		summarizeBy: sum
+		sourceColumn: Measures
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Measure = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WMlSKjQUA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Measures = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Measures", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+

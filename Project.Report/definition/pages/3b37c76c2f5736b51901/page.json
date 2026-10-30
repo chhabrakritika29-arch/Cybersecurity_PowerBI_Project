@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "3b37c76c2f5736b51901",
+  "displayName": "Threat Analysis",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920
+}

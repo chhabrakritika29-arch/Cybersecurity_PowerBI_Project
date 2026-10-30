@@ -1,0 +1,151 @@
+DeviceID,AssetTag,DeviceType,OperatingSystem,Department,Location,Criticality,Status
+D0001,DEV-1001,Desktop,Windows 11,Finance,Bengaluru,High,Active
+D0002,DEV-1002,Desktop,Windows 11,Operations,Bengaluru,Medium,Active
+D0003,DEV-1003,Laptop,Windows 10,R&D,Hyderabad,Low,Active
+D0004,DEV-1004,Desktop,Windows 10,Finance,Mumbai,Medium,Active
+D0005,DEV-1005,Server,Win11,Operations,Chennai,Low,Active
+D0006,DEV-1006,Desktop,Windows 10,HR,Noida,Low,Active
+D0007,DEV-1007,Desktop,Windows 10,R&D,Noida,Medium,Active
+D0008,DEV-1008,Desktop,Windows 10,R&D,Chennai,Low,Active
+D0009,DEV-1009,Network Device,PAN-OS,Marketing,Pune,Medium,Active
+D0010,DEV-1010,Laptop,macOS,IT,Mumbai,High,Retired
+D0011,DEV-1011,Laptop,Windows 11,R&D,Pune,High,Active
+D0012,DEV-1012,Laptop,macOS,Legal,Mumbai,High,Active
+D0013,DEV-1013,Laptop,Windows 10,Marketing,Hyderabad,high,Active
+D0014,DEV-1014,Laptop,macOS,R&D,Hyderabad,High,Maintenance
+D0015,DEV-1015,Server,Red Hat Enterprise Linux,IT,Chennai,Low,Active
+D0016,DEV-1016,Laptop,Windows 10,IT,Mumbai,High,Maintenance
+D0017,DEV-1017,Laptop,Windows 11,Marketing,Pune,High,Maintenance
+D0018,DEV-1018,Server,Windows Server 2022,Sales,Pune,Low,Active
+D0019,DEV-1019,Laptop,macOS,R&D,Noida,Low,Retired
+D0020,DEV-1020,Server,Red Hat Enterprise Linux,HR,Hyderabad,Medium,Retired
+D0021,DEV-1021,Laptop,Windows 11,Finance,Chennai,Critical,Active
+D0022,DEV-1022,Laptop,macOS,Sales,Pune,High,Maintenance
+D0023,DEV-1023,Server,Ubuntu Linux,Operations,Chennai,Medium,Maintenance
+D0024,DEV-1024,Laptop,macOS,HR,Noida,Medium,Maintenance
+D0025,DEV-1025,Laptop,macOS,Sales,Noida,Medium,Active
+D0026,DEV-1026,Server,Red Hat Enterprise Linux,R&D,Bengaluru,Medium,Maintenance
+D0027,DEV-1027,Laptop,macOS,Legal,Chennai,Critical,Active
+D0028,DEV-1028,Network Device,Cisco IOS,Legal,Bengaluru,High,Maintenance
+D0029,DEV-1029,Laptop,macOS,R&D,Mumbai,Critical,Maintenance
+D0030,DEV-1030,Laptop,macOS,HR,Chennai,Critical,Active
+D0031,DEV-1031,Laptop,macOS,Marketing,Noida,High,Maintenance
+D0032,DEV-1032,Laptop, Windows 10 ,IT,Mumbai,Low,Active
+D0033,DEV-1033,Laptop,Windows 10,Marketing,Pune,High,Active
+D0034,DEV-1034,Server,Red Hat Enterprise Linux,Legal,Hyderabad,High,Maintenance
+D0035,DEV-1035,Network Device,Cisco IOS,Finance,Bengaluru,High,Active
+D0036,DEV-1036,Network Device,PAN-OS,Finance,Chennai,Critical,Active
+D0037,DEV-1037,Laptop,macOS,Sales,Noida,Low,Active
+D0038,DEV-1038,Laptop,Windows 10,Legal,Bengaluru,Medium,Maintenance
+D0039,DEV-1039,Desktop,Windows 11,HR,Bengaluru,Low,Maintenance
+D0040,DEV-1040,Desktop,Windows 11,R&D,Pune,Low,Maintenance
+D0041,DEV-1041,Desktop,Windows 10,Sales,Mumbai,Low,Maintenance
+D0042,DEV-1042,Network Device,PAN-OS,HR,Noida,Medium,Active
+D0043,DEV-1043,Network Device,FortiOS,Legal,Mumbai,Medium,Active
+D0044,DEV-1044,Laptop,Windows 10,R&D,Noida,Medium,Retired
+D0045,DEV-1045,Laptop,Windows 10,Sales,Noida,Critical,Maintenance
+D0046,DEV-1046,Laptop,macOS,IT,Pune,High,Active
+D0047,DEV-1047,Server,Windows Server 2022,Marketing,Bengaluru,High,Retired
+D0048,DEV-1048,Laptop,macOS,HR,Mumbai,Low,Active
+D0049,DEV-1049,Laptop,Windows 10,IT,Pune,Medium,Active
+D0050,DEV-1050,Laptop,Windows 10,Marketing,Mumbai,Medium,Active
+D0051,DEV-1051,Laptop,macOS,Marketing,Pune,Medium,Active
+D0052,DEV-1052,Server,Ubuntu Linux,R&D,Hyderabad,High,Active
+D0053,DEV-1053,Server,Ubuntu Linux,Finance,Bengaluru,High,Active
+D0054,DEV-1054,Server,Red Hat Enterprise Linux,Legal,Pune,Medium,Maintenance
+D0055,DEV-1055,Laptop,macOS,Finance,Chennai,Medium,Active
+D0056,DEV-1056,Desktop,Windows 10,Finance,Mumbai,Medium,Active
+D0057,DEV-1057,Desktop,Windows 10,Operations,Mumbai,Low,Maintenance
+D0058,DEV-1058,Network Device,FortiOS,Legal,Noida,Low,Active
+D0059,DEV-1059,Laptop,Windows 10,Finance,Noida,Medium,Retired
+D0060,DEV-1060,Laptop,Windows 10,Marketing,Mumbai,Critical,Retired
+D0061,DEV-1061,Laptop,macOS,HR,Chennai,High,Maintenance
+D0062,DEV-1062,Desktop,Windows 10,IT,Mumbai,Medium,Maintenance
+D0063,DEV-1063,Laptop,Windows 11,Marketing,Noida,Critical,Active
+D0064,DEV-1064,Laptop,macOS,Marketing,Noida,Medium,Active
+D0065,DEV-1065,Network Device,FortiOS,Finance,Mumbai,Medium,Retired
+D0066,DEV-1066,Network Device,Cisco IOS,Marketing,Bengaluru,Critical,Retired
+D0067,DEV-1067,Laptop,macOS,Operations,Pune,Medium,Active
+D0068,DEV-1068,Laptop,Windows 11,IT,Hyderabad,High,Active
+D0069,DEV-1069,Network Device,PAN-OS,Sales,Bengaluru,Low,Active
+D0070,DEV-1070,Laptop,Windows 10,Operations,Pune,Medium,Active
+D0071,DEV-1071,Laptop,Windows 11,Legal,Pune,Low,Active
+D0072,DEV-1072,Laptop,Windows 10,Finance,Chennai,Medium,Retired
+D0073,DEV-1073,Laptop,macOS,Sales,Chennai,High,Active
+D0074,DEV-1074,Laptop,Windows 10,Legal,Chennai,High,Maintenance
+D0075,DEV-1075,Desktop,Windows 10,Finance,Noida,Medium,Active
+D0076,DEV-1076,Laptop,Windows 10,Marketing,Chennai,Critical,Retired
+D0077,DEV-1077,Laptop,macOS,Legal,Noida,High,Active
+D0078,DEV-1078,Server,ubuntu,Operations,Chennai,Medium,Active
+D0079,DEV-1079,Laptop,Windows 10,Legal,Chennai,High,Active
+D0080,DEV-1080,Laptop,macOS,Sales,Hyderabad,Critical,Maintenance
+D0081,DEV-1081,Laptop,Windows 11,Finance,Chennai,Low,Active
+D0082,DEV-1082,Server,Red Hat Enterprise Linux,IT,Pune,Critical,Retired
+D0083,DEV-1083,Laptop,Windows 11,Legal,Hyderabad,High,Maintenance
+D0084,DEV-1084,Server,Red Hat Enterprise Linux,IT,Hyderabad,High,Active
+D0085,DEV-1085,Laptop,macOS,Operations,Bengaluru,High,Active
+D0086,DEV-1086,Server,Ubuntu Linux,Marketing,Noida,High,Retired
+D0087,DEV-1087,Laptop,Windows 10,IT,Pune,Critical,Active
+D0088,DEV-1088,Laptop,Windows 10,Sales,Hyderabad,Medium,Active
+D0089,DEV-1089,Server,Red Hat Enterprise Linux,Legal,Noida, Critical ,Active
+D0090,DEV-1090,Laptop,macOS,Operations,Chennai,Medium,Active
+D0091,DEV-1091,Laptop,Windows 10,Marketing,Pune,Medium,Active
+D0092,DEV-1092,Laptop,macOS,IT,Mumbai,Low,Maintenance
+D0093,DEV-1093,Desktop,Windows 10,R&D,Chennai,Medium,Retired
+D0094,DEV-1094,Laptop,Windows 10,Finance,Hyderabad,High,Retired
+D0095,DEV-1095,Laptop,macOS,Sales,Noida,Medium,Retired
+D0096,DEV-1096,Laptop,Windows 11,Sales,Bengaluru,High,Active
+D0097,DEV-1097,Laptop,Windows 11,IT,Chennai,High,Active
+D0098,DEV-1098,Laptop,macOS,Operations,Pune,Medium,Active
+D0099,DEV-1099,Laptop,macOS,IT,Chennai,Low,Active
+D0100,DEV-1100,Server,Red Hat Enterprise Linux,Legal,Pune,Medium,Maintenance
+D0101,DEV-1101,Laptop,Windows 10,IT,Hyderabad,Low,Retired
+D0102,DEV-1102,Laptop,macOS,Marketing,Noida,Medium,Active
+D0103,DEV-1103,Laptop,macOS,Legal,Pune,Low,Active
+D0104,DEV-1104,Desktop,Windows 11,Marketing,Bengaluru,Low,Active
+D0105,DEV-1105,Laptop,Windows 11,Marketing,Hyderabad,High,Active
+D0106,DEV-1106,Laptop,Windows 11,Sales,Bengaluru,Low,Active
+D0107,DEV-1107,Server,Red Hat Enterprise Linux,Finance,Bengaluru,Critical,Maintenance
+D0108,DEV-1108,Laptop,macOS,R&D,Mumbai,Critical,Retired
+D0109,DEV-1109,Desktop,Windows 10,Marketing,Bengaluru,Medium,Maintenance
+D0110,DEV-1110,Laptop,Windows 10,Sales,Pune,Low,Retired
+D0111,DEV-1111,Laptop,Windows 10,R&D,Noida,Low,Active
+D0112,DEV-1112,Laptop,Windows 11,Legal,Chennai,Medium,Active
+D0113,DEV-1113,Laptop,macOS,Operations,Hyderabad,High,Retired
+D0114,DEV-1114,Laptop,Windows 11,R&D,Noida,High,Active
+D0115,DEV-1115,Network Device,Cisco IOS,HR,Noida,Medium,Maintenance
+D0116,DEV-1116,Network Device,PAN-OS,HR,Hyderabad,Medium,Active
+D0117,DEV-1117,Laptop,Windows 10,IT,Mumbai,High,Active
+D0118,DEV-1118,Laptop,macOS,Legal,Hyderabad,Medium,Retired
+D0119,DEV-1119,Network Device,FortiOS,Finance,Pune,High,Active
+D0120,DEV-1120,Laptop,macOS,Legal,Bengaluru,Medium,Active
+D0121,DEV-1121,Laptop,Windows 10,Marketing,Bengaluru,High,Retired
+D0122,DEV-1122,Laptop,macOS,Legal,Pune,Medium,Active
+D0123,DEV-1123,Laptop,Windows 11,Marketing,Chennai,Low,Active
+D0124,DEV-1124,Laptop,Windows 10,Finance,Pune,High,Retired
+D0125,DEV-1125,Laptop,Windows 10,HR,Pune,Medium,Active
+D0126,DEV-1126,Laptop,macOS,HR,Mumbai,Medium,Maintenance
+D0127,DEV-1127,Laptop,macOS,Operations,Chennai,High,Maintenance
+D0128,DEV-1128,Laptop,Windows 11,Sales,Chennai,Critical,Active
+D0129,DEV-1129,Laptop,macOS,R&D,Chennai,High,Maintenance
+D0130,DEV-1130,Laptop,Windows 10,HR,Bengaluru,High,Active
+D0131,DEV-1131,Network Device,Cisco IOS,R&D,Hyderabad,Medium,Active
+D0132,DEV-1132,Desktop,Windows 11,Sales,Noida,High,Active
+D0133,DEV-1133,Laptop,macOS,HR,Chennai,Low,Active
+D0134,DEV-1134,Server,Ubuntu Linux,IT,Chennai,Low,Retired
+D0135,DEV-1135,Laptop,Windows 10,Finance,Hyderabad,Medium,Active
+D0136,DEV-1136,Network Device,PAN-OS,Marketing,Bengaluru,Low,Active
+D0137,DEV-1137,Network Device,FortiOS,HR,Mumbai,Medium,Retired
+D0138,DEV-1138,Laptop,Windows 11,IT,Hyderabad,Medium,Active
+D0139,DEV-1139,Laptop,macOS,Legal,Noida,High,Active
+D0140,DEV-1140,Laptop,Windows 11,Operations,Chennai,High,Retired
+D0141,DEV-1141,Laptop,Windows 11,R&D,Pune,Medium,Retired
+D0142,DEV-1142,Desktop,Windows 11,Sales,Chennai,Low,Active
+D0143,DEV-1143,Laptop,Windows 10,HR,Mumbai,High,Retired
+D0144,DEV-1144,Network Device,Cisco IOS,IT,Chennai,High,Active
+D0145,DEV-1145,Desktop,Windows 10,Sales,Mumbai,Low,Active
+D0146,DEV-1146,Laptop,macOS,Finance,Pune,High,Active
+D0147,DEV-1147,Laptop,Windows 10,Marketing,Mumbai,Low,Maintenance
+D0148,DEV-1148,Network Device,FortiOS,HR,Bengaluru,Low,Maintenance
+D0149,DEV-1149,Laptop,Windows 11,IT,Bengaluru,High,Active
+D0150,DEV-1150,Network Device,PAN-OS,Legal,Pune,Medium,Active

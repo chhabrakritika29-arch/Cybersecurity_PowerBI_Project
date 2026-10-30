@@ -1,0 +1,63 @@
+relationship 9205a230-d427-44ed-b1b0-ef096fcba4ce
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Network_Logs.LogDate
+	toColumn: LocalDateTable_42b9bba5-2936-46da-b8cc-ef664266cab3.Date
+
+relationship b6d90b5c-0383-4710-b655-87b915b866ba
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Security_Incidents.IncidentDate
+	toColumn: LocalDateTable_ea8cbb9c-2a75-4de2-bcce-2ae8152c0829.Date
+
+relationship c7d8644c-307a-4765-8585-b4bae2885342
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Security_Incidents.DetectionTime
+	toColumn: LocalDateTable_afe4ac47-0a79-4ae1-98b8-11cf97e24932.Date
+
+relationship f8a37b41-29e9-4f5d-a40d-2e0947ae1f01
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Security_Incidents.ResolutionTime
+	toColumn: LocalDateTable_ba5fe529-91e4-4d29-abd5-68960bebd59f.Date
+
+relationship 294c713a-7e73-4c42-a618-16e1e3b779d7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Vulnerabilities.DiscoveredDate
+	toColumn: LocalDateTable_62bf5f31-fc78-41c4-bfcf-c7197678ca11.Date
+
+relationship b1a6d395-56ec-4158-b1ad-41b63ae70637
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Vulnerabilities.PatchDate
+	toColumn: LocalDateTable_52da5e55-61bd-459c-bce1-3790bac69d7b.Date
+
+relationship AutoDetected_ca7a52a7-97b9-4b1f-b1f5-a00feda1377b
+	fromColumn: Network_Logs.DeviceID
+	toColumn: Devices.DeviceID
+
+relationship AutoDetected_ced8b3bb-a3b2-46a0-b3c8-3091bfc91bfe
+	fromColumn: Security_Incidents.DeviceID
+	toColumn: Devices.DeviceID
+
+relationship AutoDetected_d95a3042-079e-40ab-8af3-6523da826b66
+	fromColumn: Vulnerabilities.DeviceID
+	toColumn: Devices.DeviceID
+
+relationship AutoDetected_dcc4ec54-933c-46e3-8317-e42c4bcb860e
+	fromColumn: Security_Incidents.UserID
+	toColumn: Users.UserID
+
+relationship c26bdd72-8257-1554-1e2d-1d9fb2610ed9
+	fromColumn: Security_Incidents.'Incident Date'
+	toColumn: Date.Date
+
+relationship 973fb9bc-c555-f3d3-dc5c-f1af011afe7f
+	fromColumn: Network_Logs.'Log Date'
+	toColumn: Date.Date
+
+relationship f159f5bc-1f3f-479f-9f06-b9bce367ae68
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Vulnerabilities.'Patch Date'
+	toColumn: LocalDateTable_3622eff5-2d0d-4c37-93ec-a47c153eafb5.Date
+
+relationship 981a1f2b-e5b3-3bc8-6c24-b990e478be91
+	fromColumn: Vulnerabilities.'Discovered Date'
+	toColumn: Date.Date
+

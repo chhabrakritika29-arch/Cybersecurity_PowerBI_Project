@@ -1,0 +1,89 @@
+table Date
+	lineageTag: 9cf5fcb1-dca7-4d11-9b78-a8abf75968db
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 586b6034-cbd2-4c60-9f52-69cc47e72891
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = YEAR('Date'[Date])
+		formatString: 0
+		lineageTag: a83fde31-9067-4a32-9c58-d5abf8a7a7b5
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number' = MONTH('Date'[Date])
+		formatString: 0
+		lineageTag: 1c7b5c11-2c15-4fd1-98ba-fa22f3a127a1
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = FORMAT('Date'[Date], "MMM")
+		lineageTag: 30a72756-6da2-4d1a-bd25-3ce849690fae
+		summarizeBy: none
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Year' = FORMAT('Date'[Date], "MMM yyyy")
+		lineageTag: 0c50c192-80e7-49d0-bc64-b7e04cc7583c
+		summarizeBy: none
+		sortByColumn: 'Year Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Month Number' =
+			
+			YEAR('Date'[Date]) * 100 +
+			MONTH('Date'[Date])
+		formatString: 0
+		lineageTag: aff01201-a9c7-42f8-8bc7-844e3989ead0
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		type: calculated
+		lineageTag: 8cdfb1c9-e853-4635-8672-323007a57dad
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Date Hierarchy'
+		lineageTag: 80f09031-d323-4d31-a095-6e722e9fe780
+
+		level Year
+			lineageTag: 7241aab2-c3aa-4a56-aafe-4b51770d3585
+			column: Year
+
+		level Quarter
+			lineageTag: 07cf9f79-1941-4208-bb2b-4670dad974ad
+			column: Quarter
+
+		level Month
+			lineageTag: 38c1f7e3-f8a1-4481-8b61-21d30da636bc
+			column: Month
+
+		level Date
+			lineageTag: 246bd0eb-2cb0-48cf-8d52-1e9e9b77eef2
+			column: Date
+
+	partition Date = calculated
+		mode: import
+		source =
+				
+				CALENDAR(
+				    DATE(2025,1,1),
+				    DATE(2026,12,31)
+				)
+
+	annotation PBI_Id = f498b9cdd4eb43cb9512a9fe91d1bff2
+

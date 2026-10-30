@@ -1,0 +1,134 @@
+table Network_Logs
+	lineageTag: b138604d-575d-48df-a8ab-910c1e75055f
+
+	column LogID
+		dataType: string
+		isHidden
+		lineageTag: f406ed93-395b-4e4d-883c-b1def70e5f73
+		summarizeBy: none
+		sourceColumn: LogID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column LogDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d85c56e8-9013-44fa-b64d-1715980695ca
+		summarizeBy: none
+		sourceColumn: LogDate
+
+		variation Variation
+			isDefault
+			relationship: 9205a230-d427-44ed-b1b0-ef096fcba4ce
+			defaultHierarchy: LocalDateTable_42b9bba5-2936-46da-b8cc-ef664266cab3.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column DeviceID
+		dataType: string
+		isHidden
+		lineageTag: 7c4a1f00-815c-444d-8498-d3ff497156a3
+		summarizeBy: none
+		sourceColumn: DeviceID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceIP
+		dataType: string
+		lineageTag: ec6c5fc9-25bf-456a-806a-b59a405aa9f2
+		summarizeBy: none
+		sourceColumn: SourceIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column DestinationIP
+		dataType: string
+		lineageTag: d01dd2d2-8bcc-4553-8c4e-7f0276575416
+		summarizeBy: none
+		sourceColumn: DestinationIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Protocol
+		dataType: string
+		lineageTag: 27736556-b61e-4a1f-99a4-f907f6fc7332
+		summarizeBy: none
+		sourceColumn: Protocol
+
+		annotation SummarizationSetBy = Automatic
+
+	column BytesTransferred
+		dataType: int64
+		formatString: 0
+		lineageTag: f0080b8b-badc-4dd0-80dc-71b3963ed3c1
+		summarizeBy: sum
+		sourceColumn: BytesTransferred
+
+		annotation SummarizationSetBy = Automatic
+
+	column PacketCount
+		dataType: int64
+		formatString: 0
+		lineageTag: c1dd2ce0-6059-423d-b6c8-084c05b03d57
+		summarizeBy: sum
+		sourceColumn: PacketCount
+
+		annotation SummarizationSetBy = Automatic
+
+	column DestinationPort
+		dataType: int64
+		formatString: 0
+		lineageTag: bc84c995-45cf-4866-9dd3-9b45ae35ce58
+		summarizeBy: sum
+		sourceColumn: DestinationPort
+
+		annotation SummarizationSetBy = Automatic
+
+	column Action
+		dataType: string
+		lineageTag: ad95cb40-59c2-45a0-addc-76aa872aab38
+		summarizeBy: none
+		sourceColumn: Action
+
+		annotation SummarizationSetBy = Automatic
+
+	column BytesTransferred_Clean
+		dataType: string
+		lineageTag: 76eea418-ca2f-457d-8a1a-1411b831021f
+		summarizeBy: none
+		sourceColumn: BytesTransferred_Clean
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Log Date' = DATEVALUE(Network_Logs[LogDate])
+		formatString: Long Date
+		lineageTag: d9813860-e760-4758-a346-e24795856e90
+		summarizeBy: none
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Network_Logs = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Kritika.Chhabra\Downloads\PowerBI_Project\Network_Logs.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"LogID", type text}, {"LogDate", type datetime}, {"DeviceID", type text}, {"SourceIP", type text}, {"DestinationIP", type text}, {"Protocol", type text}, {"BytesTransferred", Int64.Type}, {"PacketCount", Int64.Type}, {"DestinationPort", Int64.Type}, {"Action", type text}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type",{{"Action", Text.Trim, type text}, {"Protocol", Text.Trim, type text}}),
+				    #"Uppercased Text" = Table.TransformColumns(#"Trimmed Text",{{"Protocol", Text.Upper, type text}}),
+				    #"Added Custom" = Table.AddColumn(#"Uppercased Text", "BytesTransferred_Clean", each if [BytesTransferred] < 0 then null else [BytesTransferred])
+				in
+				    #"Added Custom"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
